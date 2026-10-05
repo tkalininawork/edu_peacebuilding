@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="30-дневный интенсив по peacebuilding, conflict transformation и feminist peacebuilding">
+<title>Peacebuilding: 30-day professional intensive</title>
+<style>
+:root{--bg:#f5f3ee;--paper:#fffefb;--ink:#17211f;--muted:#68706d;--line:#deddd6;--accent:#195f56;--accent2:#a64b2a;--soft:#e5efec;--warm:#f4e8df;--shadow:0 8px 28px rgba(23,33,31,.08);--radius:18px;}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px} button,select,textarea,input{font:inherit}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(245,243,238,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)} .topbar-inner{max-width:1180px;margin:auto;padding:10px 22px;display:flex;gap:18px;align-items:center} .progress-wrap{flex:1} .progress-line{height:8px;background:#d7d8d3;border-radius:99px;overflow:hidden} .progress-line>div{height:100%;background:var(--accent);width:0;transition:.25s} .progress-text{font-size:12px;color:var(--muted);margin-top:4px} .top-actions{display:flex;gap:8px;flex-wrap:wrap} .btn{border:1px solid var(--line);background:var(--paper);padding:8px 11px;border-radius:10px;cursor:pointer;color:var(--ink)} .btn:hover{border-color:#aaa} .btn.danger{color:#8a2f1d}
+.container{max-width:1180px;margin:auto;padding:0 22px} .hero{padding:72px 0 40px} .kicker,.eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)} .hero h1{font-size:clamp(38px,7vw,78px);line-height:.98;letter-spacing:-.045em;margin:12px 0 22px;max-width:980px} .hero .lead{font-size:clamp(18px,2vw,24px);max-width:850px;color:#34413e} .hero-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px} .stat{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px} .stat strong{display:block;font-size:25px} .stat span{font-size:13px;color:var(--muted)}
+.navchips{display:flex;gap:8px;flex-wrap:wrap;padding:0 0 42px} .navchips a{background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:8px 12px;text-decoration:none;font-size:14px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin:20px 0;box-shadow:var(--shadow)} .panel h2{font-size:30px;letter-spacing:-.025em;margin:0 0 12px} .panel h3{margin:26px 0 8px} .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px} .principle{background:var(--soft);border-radius:14px;padding:16px} .principle strong{display:block;margin-bottom:6px}
+.callout{border-left:4px solid var(--accent2);padding:12px 16px;background:var(--warm);border-radius:0 12px 12px 0;margin:18px 0} .callout strong{display:block;margin-bottom:4px}
+.week{padding:54px 0 10px} .week-head{display:flex;justify-content:space-between;gap:30px;align-items:flex-start;margin-bottom:20px} .week-head h2{font-size:clamp(30px,5vw,50px);letter-spacing:-.04em;line-height:1.05;margin:5px 0 10px} .week-head p{max-width:820px;color:#46504d;margin:0} .week-progress{min-width:110px;background:var(--soft);border-radius:14px;padding:14px;text-align:center} .week-progress strong{font-size:26px;display:block} .week-progress span{font-size:12px;color:var(--muted)}
+.day-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;margin:10px 0;overflow:hidden;box-shadow:0 3px 13px rgba(23,33,31,.04)} .day-card[open]{box-shadow:var(--shadow);border-color:#c6cec9} .day-card summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:90px 1fr 125px;gap:18px;align-items:center;padding:20px} .day-card summary::-webkit-details-marker{display:none} .day-index{font-weight:850;color:var(--accent);letter-spacing:.04em} .day-title-wrap h3{font-size:22px;margin:0 0 4px;letter-spacing:-.02em} .day-title-wrap p{margin:0;color:var(--muted);font-size:14px} .day-meta{text-align:right;display:flex;flex-direction:column;gap:4px;color:var(--muted);font-size:13px} .day-status{font-weight:700} .day-card.done .day-status{color:var(--accent)} .day-card.done summary{background:#f0f7f4}
+.day-body{padding:6px 20px 24px;border-top:1px solid var(--line)} .day-body h4{margin:18px 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#53605c} .task{display:flex;gap:10px;padding:12px 0;border-bottom:1px dashed #e2e2dc;cursor:pointer} .task input,.complete-day input,.course-card>input{position:absolute;opacity:0;pointer-events:none} .checkmark{width:20px;height:20px;border:2px solid #aeb8b4;border-radius:6px;flex:0 0 auto;margin-top:2px;position:relative} .task input:checked+.checkmark{background:var(--accent);border-color:var(--accent)} .task input:checked+.checkmark:after{content:'✓';position:absolute;color:white;font-size:13px;left:3px;top:-2px;font-weight:800} .task:has(input:checked) .task-copy{color:#7c8582;text-decoration:line-through;text-decoration-color:#bdc4c1} .time{display:inline-block;background:#eef0ed;border-radius:8px;padding:2px 7px;font-size:12px;margin-right:8px;color:#4b5653;text-decoration:none!important}
+.resources{display:grid;gap:8px} .resource{display:flex;justify-content:space-between;gap:15px;padding:11px 13px;border:1px solid var(--line);border-radius:11px;text-decoration:none;background:#fafaf7} .resource:hover{border-color:#9bb3ac} .res-note{color:var(--muted);font-size:12px;max-width:40%;text-align:right}
+.output,.reflection{padding:14px 16px;border-radius:12px;margin-top:12px} .output{background:var(--soft)} .reflection{background:var(--warm)} .output h4,.reflection h4{margin:0 0 4px} .output p,.reflection p{margin:0} .vocab>div{display:flex;flex-wrap:wrap;gap:7px} .vocab span{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:#222c29;color:#fff;padding:5px 8px;border-radius:8px}
+.gym{margin-top:16px;padding:15px;border:1px dashed #a7b6b1;border-radius:13px} .gym-tag{font-size:12px;color:var(--muted);margin-bottom:5px} .gym a{font-weight:800} .gym span{font-size:12px;color:var(--muted);margin-left:8px} .gym p{margin:6px 0 0;color:#4c5854;font-size:14px} .optional{margin-top:16px;padding:13px 15px;background:#f5f1e3;border-radius:12px;font-size:14px}
+.notes-block{margin-top:18px} .notes-block label{display:block;font-weight:700;font-size:14px;margin-bottom:7px} textarea{width:100%;min-height:110px;resize:vertical;border:1px solid var(--line);border-radius:12px;padding:12px;background:#fff;color:var(--ink)} textarea:focus,select:focus{outline:3px solid rgba(25,95,86,.15);border-color:var(--accent)} .complete-day{display:flex;justify-content:center;margin-top:16px;border:2px solid var(--accent);color:var(--accent);font-weight:800;padding:12px;border-radius:12px;cursor:pointer} .complete-day:has(input:checked){background:var(--accent);color:white}
+.section-title{padding-top:60px} .section-title h2{font-size:clamp(34px,5vw,54px);letter-spacing:-.04em;margin:5px 0 8px} .section-title p{max-width:800px;color:var(--muted)}
+.courses{display:grid;gap:12px} .course-card{display:flex;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;cursor:pointer} .course-check{width:28px;height:28px;border:2px solid #aeb8b4;border-radius:8px;display:flex;align-items:center;justify-content:center;color:transparent;flex:0 0 auto} .course-card:has(input:checked) .course-check{background:var(--accent);color:#fff;border-color:var(--accent)} .course-main{display:block} .course-main strong{display:block} .course-main>span{font-size:12px;color:var(--muted)} .course-main p{margin:5px 0;font-size:14px}
+.field-controls{display:flex;gap:10px;margin:18px 0;flex-wrap:wrap} .field-controls input,.gloss-controls input{flex:1;min-width:220px;padding:11px 13px;border:1px solid var(--line);border-radius:11px;background:var(--paper)} .field-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px} .field-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px} .field-card h3{margin:4px 0 7px;font-size:18px} .field-card p{font-size:14px;color:#4f5a56} .field-cat{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:800} .ratings{display:flex;gap:15px;margin-top:10px} .ratings label{font-size:13px;color:var(--muted)} .ratings select{margin-left:5px;border:1px solid var(--line);border-radius:7px;padding:3px} .field-note{min-height:70px;margin-top:10px;font-size:13px}
+.gloss-controls{display:flex;margin:14px 0} .glossary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px} .term{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px} .term h3{margin:0 0 5px;font-size:16px} .term p{margin:0;font-size:13px;color:#52605b} .books{display:grid;grid-template-columns:repeat(2,1fr);gap:10px} .book{display:block;background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:14px;text-decoration:none} .book strong{display:block;margin-bottom:6px} .book span{font-size:13px;color:var(--muted)}
+.footer{padding:60px 0 100px;color:var(--muted);font-size:13px} .sources-note{font-size:13px;color:var(--muted)}
+@media(max-width:800px){.hero{padding-top:42px}.hero-grid{grid-template-columns:repeat(2,1fr)}.principles{grid-template-columns:1fr}.week-head{display:block}.week-progress{margin-top:12px;display:inline-block}.day-card summary{grid-template-columns:64px 1fr;gap:10px;padding:16px}.day-meta{grid-column:2;text-align:left;flex-direction:row}.field-grid,.glossary-grid,.books{grid-template-columns:1fr}.resource{display:block}.res-note{display:block;max-width:none;text-align:left;margin-top:4px}.top-actions .hide-mobile{display:none}}
+@media(max-width:500px){.container{padding:0 14px}.topbar-inner{padding:8px 14px}.hero-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:42px}.day-title-wrap h3{font-size:19px}.day-card summary{grid-template-columns:55px 1fr}.day-body{padding:6px 14px 20px}.ratings{flex-direction:column;gap:6px}}
+@media print{.topbar,.navchips,.btn,.complete-day,.field-controls,.gloss-controls{display:none!important} body{background:white} .container{max-width:none} .day-card{break-inside:avoid;box-shadow:none} .day-card:not([open]) .day-body{display:block}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner"><div class="progress-wrap"><div class="progress-line"><div id="main-progress"></div></div><div class="progress-text"><span id="main-pct">0%</span> · <span id="days-done">0</span>/30 дней</div></div><div class="top-actions"><button class="btn hide-mobile" id="open-all">Открыть всё</button><button class="btn hide-mobile" id="close-all">Свернуть</button><button class="btn" id="export-btn">Экспорт</button><button class="btn" id="import-btn">Импорт</button><input type="file" id="import-file" accept="application/json,.json" hidden></div></div></div>
+
+<main class="container">
+<header class="hero" id="top">
+  <div class="kicker">30-DAY PROFESSIONAL INTENSIVE · PEACEBUILDING</div>
+  <h1>Войти в поле так, чтобы понимать, о чём говорят.</h1>
+  <p class="lead">Интенсив на 30 дней для опытной civil-society practitioner и фасилитаторки, которая переходит в conflict transformation / feminist peacebuilding. Не курс «с нуля», а систематизация, расширение профессионального языка и проверка специализаций.</p>
+  <div class="hero-grid"><div class="stat"><strong>30</strong><span>дней</span></div><div class="stat"><strong>2–3 ч</strong><span>основной работы в день</span></div><div class="stat"><strong>4</strong><span>тематические недели</span></div><div class="stat"><strong>1</strong><span>финальный professional briefing</span></div></div>
+</header>
+<nav class="navchips"><a href="#method">Как учиться</a><a href="#week-1">Week 1</a><a href="#week-2">Week 2</a><a href="#week-3">Week 3</a><a href="#week-4">Week 4</a><a href="#courses">Параллельные курсы</a><a href="#field-map">Карта направлений</a><a href="#glossary">Глоссарий</a><a href="#books">Книги</a></nav>
+
+<section class="panel" id="method">
+  <h2>Как устроено обучение</h2>
+  <p>Это программа для взрослого человека с уже существующей практикой. Поэтому здесь мало «посмотреть лекцию и пойти дальше» и много <strong>retrieval, comparison, application и articulation</strong>. Каждый день заканчивается небольшим продуктом: схемой, memo, voice note, analysis или position statement. Именно они должны к концу месяца дать ощущение профессиональной опоры.</p>
+  <div class="principles">
+    <div class="principle"><strong>1. Сначала карта, потом глубина</strong><span>Ты сначала понимаешь, где находится понятие в поле, и только потом уходишь в специализацию.</span></div>
+    <div class="principle"><strong>2. Не переносить организационный конфликт на войну</strong><span>Твои facilitation skills — ресурс, но armed/political conflict требует дополнительных рамок, анализа власти, безопасности и права.</span></div>
+    <div class="principle"><strong>3. Анализ ≠ моральная симметрия</strong><span>Actor mapping и dialogue не требуют делать вид, что позиции, власть или ответственность сторон равны.</span></div>
+    <div class="principle"><strong>4. Английский встроен, но не доминирует</strong><span>Основное понимание можно фиксировать по-русски. Каждый день есть небольшой English output для professional fluency.</span></div>
+    <div class="principle"><strong>5. Один день — один артефакт</strong><span>Не пытайся «прочитать всё». Цель — уметь использовать концепт и объяснять его.</span></div>
+    <div class="principle"><strong>6. Сравнивать контексты, не уравнивать их</strong><span>Colombia, Ukraine, Northern Ireland и твой российский/exile опыт используются для сравнения механизмов, а не для утверждения, что конфликты одинаковы.</span></div>
+  </div>
+  <div class="callout"><strong>Режим 2–3 часа</strong>Если материал оказался сложнее, прекращай чтение после указанного времени и переходи к applied task. В этой программе способность применить 60% текста полезнее, чем героически дочитать 100% и ничего не собрать. Gym/podcast и optional books в дневной лимит не входят.</div>
+  <h3>Три сквозных кейса</h3>
+  <p><strong>Colombia</strong> — чтобы увидеть formal peace process, implementation, truth/memory и “slow peace”. <strong>Ukraine</strong> — чтобы изучать текущие вопросы accountability и transitional justice без абстракции. <strong>Твоя практика civil society</strong> — чтобы проверять transfer: где твои навыки уже релевантны, а где требуется новая компетентность.</p>
+  <p class="sources-note">Основные ссылки проверены 6 октября 2026 года. Материалы преимущественно от UN, GPPAC, Berghof Foundation, Inclusive Peace, WILPF, ICTJ, PeaceRep, Conciliation Resources и Kroc Institute.</p>
+</section>
+
+
+<section class="week" id="week-1">
+  <div class="week-head"><div><span class="eyebrow">WEEK 1</span><h2>Неделя 1. Язык поля и анализ конфликта</h2><p>Перестать видеть peacebuilding как туманное большое слово. К концу недели ты различаешь основные подходы, можешь объяснить conflict transformation и делаешь базовый conflict analysis с учётом власти и гендера.</p></div><div class="week-progress"><strong id="week1-pct">0%</strong><span>7 дней</span></div></div>
+  
+<details class="day-card" id="day-1" data-week="1">
+  <summary>
+    <div class="day-index">Day 1</div>
+    <div class="day-title-wrap"><h3>Что вообще называется peacebuilding</h3><p>Собрать карту поля и перестать смешивать prevention, peacemaking, peacekeeping, peace enforcement и peacebuilding.</p></div>
+    <div class="day-meta"><span>2ч 25</span><span class="day-status" id="status-1">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d1-t1"><input type="checkbox" id="d1-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Прочитай UN Terminology. Выпиши своими словами разницу между conflict prevention, peacemaking, peacekeeping, peace enforcement и peacebuilding.</span></label><label class="task" for="d1-t2"><input type="checkbox" id="d1-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Прочитай International Alert «What is peacebuilding?». Отдельно отметь идею structural violence и вопрос власти.</span></label><label class="task" for="d1-t3"><input type="checkbox" id="d1-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Открой Strategic Peacebuilding Pathways Wheel от Kroc Institute. Не заучивай: посмотри, как поле раскладывается на conflict transformation, justice/healing и structural change.</span></label><label class="task" for="d1-t4"><input type="checkbox" id="d1-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Сделай свою первую карту поля. Три колонки: «уже делала», «понимаю теоретически», «почти не знаю». Распредели туда направления из GPPAC.</span></label><label class="task" for="d1-t5"><input type="checkbox" id="d1-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Запиши 5–7 минут голосом на английском: What I currently understand by peacebuilding and where I might fit.</span></label><label class="task" for="d1-t6"><input type="checkbox" id="d1-t6" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">15 мин</span>Сделай карточки терминов дня и попробуй восстановить определения без подсказки.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://peacekeeping.un.org/en/terminology" target="_blank" rel="noopener"><span>↗ UN Peacekeeping — Terminology</span><span class="res-note">базовые различия между peacebuilding / peacemaking / peacekeeping</span></a><a class="resource" href="https://www.international-alert.org/about/what-is-peacebuilding/" target="_blank" rel="noopener"><span>↗ International Alert — What is peacebuilding?</span><span class="res-note">direct + structural violence, power</span></a><a class="resource" href="https://kroc.nd.edu/alumni/strategic-peacebuilding-pathways/" target="_blank" rel="noopener"><span>↗ Kroc Institute — Strategic Peacebuilding Pathways</span><span class="res-note">карта профессий и практик</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Одностраничная «карта поля v1» + первый английский voice note. Сохрани его: на Day 30 сравнишь с финальным.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Какие 3 области ты раньше не считала peacebuilding, хотя они уже пересекаются с твоим опытом?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>peacebuilding</span><span>peacemaking</span><span>peacekeeping</span><span>conflict prevention</span><span>structural violence</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://www.cuspnetwork.org/the-cusp-podcast/" target="_blank" rel="noopener">CUSP Podcast — Episode 4: The Value of Peacebuilding</a><span>~30–45 мин</span><p>Слушай не ради конспекта. Заметь, как собеседники определяют ценность peacebuilding и что считают результатом.</p></div>
+    
+    <div class="notes-block"><label for="notes-1">Заметки / то, что хочется унести с собой</label><textarea id="notes-1" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-1"><input type="checkbox" id="done-1" class="day-done" data-save="check" data-day="1" data-week="1"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-2" data-week="1">
+  <summary>
+    <div class="day-index">Day 2</div>
+    <div class="day-title-wrap"><h3>Мир, насилие и «корни конфликта»</h3><p>Разобраться, почему peacebuilding не сводится к прекращению стрельбы и почему «мир» может сосуществовать с насилием и несправедливостью.</p></div>
+    <div class="day-meta"><span>2ч 20</span><span class="day-status" id="status-2">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d2-t1"><input type="checkbox" id="d2-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Вернись к International Alert и сформулируй разницу между direct violence и structural violence на 2–3 собственных примерах.</span></label><label class="task" for="d2-t2"><input type="checkbox" id="d2-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай обзор Berghof «Towards Conflict Transformation and a Just Peace». Обрати внимание на структурные источники конфликта.</span></label><label class="task" for="d2-t3"><input type="checkbox" id="d2-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Возьми один знакомый общественный конфликт (не обязательно вооружённый) и опиши: видимое насилие/напряжение, институциональные условия, нормы и отношения, которые его поддерживают.</span></label><label class="task" for="d2-t4"><input type="checkbox" id="d2-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Напиши 250–350 слов: Why “ending violence” and “building peace” are not the same thing.</span></label><label class="task" for="d2-t5"><input type="checkbox" id="d2-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Закрой тексты и по памяти объясни понятия вчерашнего и сегодняшнего дня.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.international-alert.org/about/what-is-peacebuilding/" target="_blank" rel="noopener"><span>↗ International Alert — What is peacebuilding?</span></a><a class="resource" href="https://berghof-foundation.org/library/towards-conflict-transformation-and-a-just-peace" target="_blank" rel="noopener"><span>↗ Berghof — Towards Conflict Transformation and a Just Peace</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Короткий английский аргумент о различии negative peace / sustainable just peace.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Какие формы насилия становятся невидимыми, если анализировать только вооружённых акторов?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>direct violence</span><span>structural violence</span><span>just peace</span><span>root causes</span><span>power asymmetry</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-2">Заметки / то, что хочется унести с собой</label><textarea id="notes-2" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-2"><input type="checkbox" id="done-2" class="day-done" data-save="check" data-day="2" data-week="1"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-3" data-week="1">
+  <summary>
+    <div class="day-index">Day 3</div>
+    <div class="day-title-wrap"><h3>Management, resolution, transformation</h3><p>Понять три разных логики работы с конфликтом и почему conflict transformation — это не просто более красивое слово для conflict resolution.</p></div>
+    <div class="day-meta"><span>2ч 30</span><span class="day-status" id="status-3">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d3-t1"><input type="checkbox" id="d3-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Прочитай Berghof «Conflict Transformation: A Multi-Dimensional Task». Сделай таблицу management / resolution / transformation.</span></label><label class="task" for="d3-t2"><input type="checkbox" id="d3-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Просмотри Berghof Handbook как профессиональную библиотеку: какие темы там считаются частью conflict transformation?</span></label><label class="task" for="d3-t3"><input type="checkbox" id="d3-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">40 мин</span>Возьми один известный тебе групповой или общественный конфликт. Для него придумай три разных вмешательства: management, resolution, transformation.</span></label><label class="task" for="d3-t4"><input type="checkbox" id="d3-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Объясни вслух на английском: “I would call this transformation rather than resolution because…” Используй конкретный пример.</span></label><label class="task" for="d3-t5"><input type="checkbox" id="d3-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">15 мин</span>Retrieval: без текста выпиши 5 отличий transformation от resolution.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://berghof-foundation.org/library/conflict-transformation-a-multi-dimensional-task" target="_blank" rel="noopener"><span>↗ Berghof — Conflict Transformation: A Multi-Dimensional Task</span></a><a class="resource" href="https://berghof-foundation.org/library/berghof-handbook-for-conflict-transformation" target="_blank" rel="noopener"><span>↗ Berghof Handbook for Conflict Transformation</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Сравнительная таблица management / resolution / transformation + 3-minute English explanation.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>В каких конфликтах «разрешение» может быть политически плохой целью?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>conflict management</span><span>conflict resolution</span><span>conflict transformation</span><span>relationship change</span><span>structural change</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://kroc.nd.edu/news-events/podcasts/topics/justice/" target="_blank" rel="noopener">Kroc Cast — Wicked Problems: The Ethics of Action for Peace, Rights, and Justice</a><span>26:39</span><p>Заметь ситуации, где “do good” не даёт морально чистого решения.</p></div>
+    
+    <div class="notes-block"><label for="notes-3">Заметки / то, что хочется унести с собой</label><textarea id="notes-3" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-3"><input type="checkbox" id="done-3" class="day-done" data-save="check" data-day="3" data-week="1"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-4" data-week="1">
+  <summary>
+    <div class="day-index">Day 4</div>
+    <div class="day-title-wrap"><h3>Conflict analysis I: акторы, причины, динамика</h3><p>Освоить базовую механику анализа: не «кто с кем ругается», а actors, drivers, triggers, interests, relationships и dynamics.</p></div>
+    <div class="day-meta"><span>2ч 45</span><span class="day-status" id="status-4">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d4-t1"><input type="checkbox" id="d4-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай Introduction и обзор методов в GPPAC Conflict Analysis Field Guide. Не читай руководство целиком.</span></label><label class="task" for="d4-t2"><input type="checkbox" id="d4-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Выбери учебный кейс на неделю. Лучше: реальный, но обезличенный civil-society конфликт, который ты хорошо знаешь. Если не хочется — придумай коалицию в эмиграции, где группы спорят о стратегии, публичной позиции и распределении ресурсов.</span></label><label class="task" for="d4-t3"><input type="checkbox" id="d4-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">50 мин</span>Сделай actor map: основные, вторичные и внешние акторы; отношения между ними; кто имеет формальную и неформальную власть.</span></label><label class="task" for="d4-t4"><input type="checkbox" id="d4-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сделай conflict tree: root causes / core problem / effects. Затем добавь triggers — события, которые могут резко усилить напряжение.</span></label><label class="task" for="d4-t5"><input type="checkbox" id="d4-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Сформулируй 5 вопросов, ответы на которые тебе ещё нужны, прежде чем предлагать intervention.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://new.gppac.net/resources/conflict-analysis-framework-field-guidelines-and-procedures" target="_blank" rel="noopener"><span>↗ GPPAC — Conflict Analysis Framework: Field Guidelines and Procedures</span><span class="res-note">есть русская версия; тебе полезно читать терминологию и на английском</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Actor map + conflict tree + список неизвестного. Это твой первый настоящий analytic artifact.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Что в твоём первом объяснении конфликта оказалось предположением, а не фактом?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>conflict driver</span><span>trigger</span><span>actor mapping</span><span>position</span><span>interest</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-4">Заметки / то, что хочется унести с собой</label><textarea id="notes-4" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-4"><input type="checkbox" id="done-4" class="day-done" data-save="check" data-day="4" data-week="1"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-5" data-week="1">
+  <summary>
+    <div class="day-index">Day 5</div>
+    <div class="day-title-wrap"><h3>Conflict analysis II: власть, гендер, позиционность</h3><p>Добавить то, что часто выпадает из «нейтральных» карт конфликта: неравенство ресурсов, исключение, гендер, статус и собственную позицию аналитика.</p></div>
+    <div class="day-meta"><span>2ч 35</span><span class="day-status" id="status-5">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d5-t1"><input type="checkbox" id="d5-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай Berghof «Culture, Power Asymmetries and Gender in Conflict Transformation».</span></label><label class="task" for="d5-t2"><input type="checkbox" id="d5-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай введение и выбранный раздел WILPF Guide to Feminist Political Economy. Ищи не всё про экономику, а вопрос: кто контролирует ресурсы и кто оплачивает последствия войны/кризиса.</span></label><label class="task" for="d5-t3"><input type="checkbox" id="d5-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Вернись к actor map Day 4. Добавь к каждому актору: ресурсы, риски, возможность выйти из конфликта, институциональную власть, публичную легитимность, гендерные/классовые асимметрии.</span></label><label class="task" for="d5-t4"><input type="checkbox" id="d5-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Напиши 5–7 предложений: How does my own position shape what I notice and what I might miss?</span></label><label class="task" for="d5-t5"><input type="checkbox" id="d5-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">15 мин</span>Retrieval: объясни разницу между “different positions” и “unequal positions”.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://berghof-foundation.org/library/culture-power-asymmetries-and-gender-in-conflict-transformation" target="_blank" rel="noopener"><span>↗ Berghof — Culture, Power Asymmetries and Gender in Conflict Transformation</span></a><a class="resource" href="https://www.wilpf.org/publications/a-wilpf-guide-to-feminist-political-economy-edition-3/" target="_blank" rel="noopener"><span>↗ WILPF — A Guide to Feminist Political Economy, Edition 3 (2025)</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Power-sensitive actor map v2.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Когда язык «сторон конфликта» создаёт ложное ощущение симметрии?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>power asymmetry</span><span>positionality</span><span>political economy</span><span>resources</span><span>legitimacy</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://kroc.nd.edu/news-events/podcasts/topics/peace-accords-matrix-project/" target="_blank" rel="noopener">Kroc Cast — Beyond the Timeline: “Slow Peace” and the Power of Civil Society</a><span>1:01:05</span><p>Слушай как пример того, почему формальные milestones не исчерпывают мирный процесс.</p></div>
+    
+    <div class="notes-block"><label for="notes-5">Заметки / то, что хочется унести с собой</label><textarea id="notes-5" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-5"><input type="checkbox" id="done-5" class="day-done" data-save="check" data-day="5" data-week="1"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-6" data-week="1">
+  <summary>
+    <div class="day-index">Day 6</div>
+    <div class="day-title-wrap"><h3>Conflict sensitivity и Do No Harm</h3><p>Понять ключевую профессиональную дисциплину: даже хороший проект может ухудшить конфликтные динамики.</p></div>
+    <div class="day-meta"><span>2ч 25</span><span class="day-status" id="status-6">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d6-t1"><input type="checkbox" id="d6-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">40 мин</span>Открой International Alert conflict-sensitive approaches. Прочитай вводные разделы о conflict sensitivity и Do No Harm; не пытайся проходить весь manual.</span></label><label class="task" for="d6-t2"><input type="checkbox" id="d6-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Составь для своего учебного кейса список dividers и connectors.</span></label><label class="task" for="d6-t3"><input type="checkbox" id="d6-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Выбери гипотетическое вмешательство (например, dialogue workshop, microgrants, community event). Найди минимум 5 способов, которыми оно может непреднамеренно усилить конфликт.</span></label><label class="task" for="d6-t4"><input type="checkbox" id="d6-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Переделай intervention так, чтобы уменьшить риски. Отдельно запиши, какие trade-offs остаются.</span></label><label class="task" for="d6-t5"><input type="checkbox" id="d6-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">15 мин</span>На английском сформулируй: conflict sensitivity is not the same as conflict avoidance.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.international-alert.org/app/uploads/2021/09/Training-Development-Humanitarian-Assistance-Peacebuilding-EN-2004.pdf" target="_blank" rel="noopener"><span>↗ International Alert — Conflict-Sensitive Approaches to Development, Humanitarian Assistance and Peacebuilding</span><span class="res-note">классический manual; читать выборочно</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Mini Do-No-Harm review выбранного intervention.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Может ли требование «не навредить» само стать оправданием бездействия?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>conflict sensitivity</span><span>Do No Harm</span><span>divider</span><span>connector</span><span>unintended consequence</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-6">Заметки / то, что хочется унести с собой</label><textarea id="notes-6" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-6"><input type="checkbox" id="done-6" class="day-done" data-save="check" data-day="6" data-week="1"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-7" data-week="1">
+  <summary>
+    <div class="day-index">Day 7</div>
+    <div class="day-title-wrap"><h3>Синтез I: я уже могу анализировать конфликт</h3><p>Не добавлять новые концепции. Собрать неделю в одну работающую модель и проверить, что знания извлекаются без текстов.</p></div>
+    <div class="day-meta"><span>2ч 35</span><span class="day-status" id="status-7">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d7-t1"><input type="checkbox" id="d7-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Без материалов нарисуй заново поле: prevention / peacemaking / peacekeeping / peacebuilding + management / resolution / transformation.</span></label><label class="task" for="d7-t2"><input type="checkbox" id="d7-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">55 мин</span>Собери одностраничный conflict brief по кейсу: context, actors, drivers, triggers, power asymmetries, dividers/connectors, unknowns.</span></label><label class="task" for="d7-t3"><input type="checkbox" id="d7-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Напиши 5 принципов, которые ты сейчас считаешь обязательными для ethical conflict work.</span></label><label class="task" for="d7-t4"><input type="checkbox" id="d7-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Запиши 7–8 минут по-английски: “Here is how I would analyse this conflict before designing an intervention.” Без чтения по бумаге.</span></label><label class="task" for="d7-t5"><input type="checkbox" id="d7-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Проверь запись: где не хватило слов? Добавь их в glossary. Не исправляй весь английский, только профессиональные gaps.</span></label></div>
+    
+    <div class="output"><h4>Результат дня</h4><p>1-page conflict brief + English analytic briefing.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Что изменилось в твоём способе видеть конфликт всего за неделю?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>analysis</span><span>assumption</span><span>intervention</span><span>conflict sensitivity</span><span>ethical dilemma</span></div></div>
+    
+    <div class="optional"><strong>Дополнительно, если хочется:</strong> Выходной deep read: John Paul Lederach, The Moral Imagination. Не надо читать подряд как учебник; выбери 1–2 главы и отмечай, где он говорит о relational imagination.</div>
+    <div class="notes-block"><label for="notes-7">Заметки / то, что хочется унести с собой</label><textarea id="notes-7" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-7"><input type="checkbox" id="done-7" class="day-done" data-save="check" data-day="7" data-week="1"><span>День завершён</span></label>
+  </div>
+</details>
+</section>
+<section class="week" id="week-2">
+  <div class="week-head"><div><span class="eyebrow">WEEK 2</span><h2>Неделя 2. Как peacebuilding делается на практике</h2><p>Разобраться в peace processes, mediation, dialogue, роли civil society, local peacebuilding и prevention. Увидеть, где заканчивается фасилитация и начинается специфическая миротворческая практика.</p></div><div class="week-progress"><strong id="week2-pct">0%</strong><span>7 дней</span></div></div>
+  
+<details class="day-card" id="day-8" data-week="2">
+  <summary>
+    <div class="day-index">Day 8</div>
+    <div class="day-title-wrap"><h3>Анатомия peace process</h3><p>Понять, что peace process — это не одна встреча за столом, а политическая архитектура с фазами, форматами, акторами и implementation.</p></div>
+    <div class="day-meta"><span>2ч 30</span><span class="day-status" id="status-8">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d8-t1"><input type="checkbox" id="d8-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Повтори UN terminology, теперь только peacemaking и mediation.</span></label><label class="task" for="d8-t2"><input type="checkbox" id="d8-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Открой Inclusive Peace Library и прочитай обзорные материалы про inclusive peace processes. Посмотри, какие формы участия существуют помимо места за столом переговоров.</span></label><label class="task" for="d8-t3"><input type="checkbox" id="d8-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Нарисуй условный peace process: pre-negotiation → talks → agreement → implementation. Добавь, где могут входить civil society, women’s groups, experts, communities.</span></label><label class="task" for="d8-t4"><input type="checkbox" id="d8-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сравни три понятия: negotiation, mediation, dialogue. Для каждого — цель, кто участвует, кто принимает решение, что считается outcome.</span></label><label class="task" for="d8-t5"><input type="checkbox" id="d8-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Сделай 3-minute English explainer: A peace process is not the same as a dialogue project.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://peacekeeping.un.org/en/terminology" target="_blank" rel="noopener"><span>↗ UN Peacekeeping — Terminology</span></a><a class="resource" href="https://www.inclusivepeace.org/resources/library/" target="_blank" rel="noopener"><span>↗ Inclusive Peace — Library</span><span class="res-note">ищи Civil Society / Dialogues / Broadening Participation</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Схема peace process + таблица negotiation / mediation / dialogue.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Кто может влиять на мирный процесс, не будучи официальной «стороной переговоров»?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>peace process</span><span>negotiation</span><span>mediation</span><span>implementation</span><span>inclusion</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-8">Заметки / то, что хочется унести с собой</label><textarea id="notes-8" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-8"><input type="checkbox" id="done-8" class="day-done" data-save="check" data-day="8" data-week="2"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-9" data-week="2">
+  <summary>
+    <div class="day-index">Day 9</div>
+    <div class="day-title-wrap"><h3>Mediation: что реально делает медиатор</h3><p>Отделить mediation от фасилитации групп и понять профессиональные требования к mediation в политических/вооружённых конфликтах.</p></div>
+    <div class="day-meta"><span>2ч 40</span><span class="day-status" id="status-9">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d9-t1"><input type="checkbox" id="d9-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">55 мин</span>Прочитай UN Guidance for Effective Mediation. Особое внимание: consent, impartiality, inclusivity, national ownership, international law, quality agreements.</span></label><label class="task" for="d9-t2"><input type="checkbox" id="d9-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Для каждого принципа запиши по одному практическому риску. Например: inclusivity может конфликтовать с manageability; impartiality не означает moral neutrality.</span></label><label class="task" for="d9-t3"><input type="checkbox" id="d9-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сравни свою фасилитационную практику с mediation: какие навыки переносятся напрямую, а каких у тебя пока нет?</span></label><label class="task" for="d9-t4"><input type="checkbox" id="d9-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Составь список из 8 mediation competencies, которые тебе было бы интересно развивать.</span></label><label class="task" for="d9-t5"><input type="checkbox" id="d9-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">15 мин</span>Проговори на английском разницу mediator / facilitator / negotiator.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://peacemaker.un.org/en/documents/united-nations-guidance-effective-mediation" target="_blank" rel="noopener"><span>↗ UN Peacemaker — Guidance for Effective Mediation</span></a><a class="resource" href="https://peacemaker.un.org/en/resources/un-guidance-for-mediation" target="_blank" rel="noopener"><span>↗ UN Peacemaker — Mediation guidance library</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Personal mediation skills gap: transferable / new / not sure.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Что в mediation требует политической компетентности, а не только хорошей фасилитации?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>consent</span><span>impartiality</span><span>inclusivity</span><span>ownership</span><span>mediation support</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://kroc.nd.edu/news-events/podcasts/topics/peace-accords-matrix-project/" target="_blank" rel="noopener">Kroc Cast — A Conversation with Juan Manuel Santos</a><span>28:07</span><p>Слушай как разговор о формальном peace agreement и его implementation, а не как «историю успеха».</p></div>
+    
+    <div class="notes-block"><label for="notes-9">Заметки / то, что хочется унести с собой</label><textarea id="notes-9" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-9"><input type="checkbox" id="done-9" class="day-done" data-save="check" data-day="9" data-week="2"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-10" data-week="2">
+  <summary>
+    <div class="day-index">Day 10</div>
+    <div class="day-title-wrap"><h3>Dialogue: зачем, когда и когда не надо</h3><p>Разобраться в типах dialogue и уйти от идеи «разговор сам по себе полезен».</p></div>
+    <div class="day-meta"><span>2ч 30</span><span class="day-status" id="status-10">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d10-t1"><input type="checkbox" id="d10-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Через Inclusive Peace Library открой “Dialogues in Peace and Mediation Processes: Definitions, types, goals, and success factors”. Читай executive/summary sections.</span></label><label class="task" for="d10-t2"><input type="checkbox" id="d10-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Составь типологию: exploratory dialogue, problem-solving dialogue, national dialogue, community dialogue. У каждого — цель и ограничения.</span></label><label class="task" for="d10-t3"><input type="checkbox" id="d10-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сделай decision test: 7 вопросов, которые ты задашь перед предложением диалога. Обязательно включи безопасность, power asymmetry, legitimacy и возможность отказа.</span></label><label class="task" for="d10-t4"><input type="checkbox" id="d10-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Возьми провокационный тезис: “If people can talk, dialogue is always better than no dialogue.” Напиши короткое опровержение.</span></label><label class="task" for="d10-t5"><input type="checkbox" id="d10-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">15 мин</span>English: explain the difference between dialogue as a process and reconciliation as a possible long-term outcome.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.inclusivepeace.org/resources/library/" target="_blank" rel="noopener"><span>↗ Inclusive Peace — Dialogues in Peace and Mediation Processes (в библиотеке)</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Твой собственный “Should we dialogue?” checklist.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Какие условия делают приглашение к диалогу формой давления на более уязвимую сторону?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>dialogue</span><span>process design</span><span>safety</span><span>legitimacy</span><span>power imbalance</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-10">Заметки / то, что хочется унести с собой</label><textarea id="notes-10" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-10"><input type="checkbox" id="done-10" class="day-done" data-save="check" data-day="10" data-week="2"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-11" data-week="2">
+  <summary>
+    <div class="day-index">Day 11</div>
+    <div class="day-title-wrap"><h3>Civil society: семь функций в peacebuilding</h3><p>Увидеть гражданское общество не как фон для «настоящей дипломатии», а как отдельного peacebuilding actor.</p></div>
+    <div class="day-meta"><span>2ч 30</span><span class="day-status" id="status-11">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d11-t1"><input type="checkbox" id="d11-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай Inclusive Peace “Civil Society in Peace Processes at a Glance”. Найди семь функций civil society.</span></label><label class="task" for="d11-t2"><input type="checkbox" id="d11-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Перепиши семь функций простыми словами: protection, monitoring, advocacy, in-group socialisation, social cohesion, intermediation/dialogue, service delivery.</span></label><label class="task" for="d11-t3"><input type="checkbox" id="d11-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Сделай mapping своего опыта по этим семи функциям. Не называй всё peacebuilding: отмечай только реальное пересечение.</span></label><label class="task" for="d11-t4"><input type="checkbox" id="d11-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Выбери две функции, где у тебя уже сильная база, и две, которые тебе интересны как следующая ступень.</span></label><label class="task" for="d11-t5"><input type="checkbox" id="d11-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: 4-minute answer to “What can civil society actually contribute to peace processes?”</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.inclusivepeace.org/theme-posts/civil-society-and-peace-processes/" target="_blank" rel="noopener"><span>↗ Inclusive Peace — Civil Society and Peace Processes</span></a><a class="resource" href="https://www.inclusivepeace.org/wp-content/uploads/2021/05/briefing-note-civil-society-in-peace-processes-en.pdf" target="_blank" rel="noopener"><span>↗ Briefing PDF — Civil Society in Peace Processes at a Glance</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Матрица “7 civil-society functions × мой опыт”.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Какие функции civil society могут конфликтовать друг с другом? Например, service delivery и advocacy?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>civil society</span><span>protection</span><span>monitoring</span><span>intermediation</span><span>social cohesion</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://kroc.nd.edu/news-events/podcasts/topics/peace-accords-matrix-project/" target="_blank" rel="noopener">Kroc Cast — Beyond the Timeline: “Slow Peace” and the Power of Civil Society</a><span>1:01:05</span><p>Теперь слушай второй раз/частично уже через вопрос: какую работу civil society не видно в формальных индикаторах?</p></div>
+    
+    <div class="notes-block"><label for="notes-11">Заметки / то, что хочется унести с собой</label><textarea id="notes-11" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-11"><input type="checkbox" id="done-11" class="day-done" data-save="check" data-day="11" data-week="2"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-12" data-week="2">
+  <summary>
+    <div class="day-index">Day 12</div>
+    <div class="day-title-wrap"><h3>Local / community-based peacebuilding и social cohesion</h3><p>Понять, что значит “local” помимо красивого слова, и где community work становится peacebuilding.</p></div>
+    <div class="day-meta"><span>2ч 35</span><span class="day-status" id="status-12">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d12-t1"><input type="checkbox" id="d12-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай executive summary UN Thematic Review on Local Peacebuilding. Выдели, что делает local action эффективным и что доноры часто делают плохо.</span></label><label class="task" for="d12-t2"><input type="checkbox" id="d12-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Просмотри UN Community Engagement Guidelines. Отметь различие engagement, participation, ownership.</span></label><label class="task" for="d12-t3"><input type="checkbox" id="d12-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">40 мин</span>Возьми одну community-программу, которую ты знаешь. Ответь: что именно она меняет — услуги, связи, доверие, нормы, отношения с институтами, распределение власти?</span></label><label class="task" for="d12-t4"><input type="checkbox" id="d12-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Сформулируй критерий: когда community building становится peacebuilding, а когда остаётся просто community building?</span></label><label class="task" for="d12-t5"><input type="checkbox" id="d12-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: explain “local ownership” without romanticising local actors.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.un.org/peacebuilding/en/content/local-peacebuilding-2022" target="_blank" rel="noopener"><span>↗ UN — Thematic Review on Local Peacebuilding</span></a><a class="resource" href="https://www.un.org/peacebuilding/en/content/un-community-engagement-guidelines-peacebuilding-and-sustaining-peace-0" target="_blank" rel="noopener"><span>↗ UN — Community Engagement Guidelines</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>1-page distinction: community building / community-based peacebuilding / social cohesion.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Почему «local» не автоматически означает справедливое, инклюзивное или ненасильственное?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>local ownership</span><span>community engagement</span><span>social cohesion</span><span>participation</span><span>localisation</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-12">Заметки / то, что хочется унести с собой</label><textarea id="notes-12" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-12"><input type="checkbox" id="done-12" class="day-done" data-save="check" data-day="12" data-week="2"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-13" data-week="2">
+  <summary>
+    <div class="day-index">Day 13</div>
+    <div class="day-title-wrap"><h3>Prevention, early warning, atrocity prevention и R2P</h3><p>Ориентироваться в превентивной части поля и не смешивать обычный conflict prevention с prevention of mass atrocities.</p></div>
+    <div class="day-meta"><span>2ч 30</span><span class="day-status" id="status-13">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d13-t1"><input type="checkbox" id="d13-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Прочитай UN Office on Genocide Prevention overview и посмотри Framework of Analysis как инструмент risk assessment.</span></label><label class="task" for="d13-t2"><input type="checkbox" id="d13-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай UN overview Responsibility to Protect. Зафиксируй четыре atrocity crimes и три уровня ответственности.</span></label><label class="task" for="d13-t3"><input type="checkbox" id="d13-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Сделай лестницу: everyday tension → political crisis → violent conflict → atrocity risk. Какие indicators и responses меняются на каждом уровне?</span></label><label class="task" for="d13-t4"><input type="checkbox" id="d13-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Возьми один исторический кейс, который хорошо знаешь, и задним числом выпиши early warning signals. Затем запиши, почему hindsight bias опасен.</span></label><label class="task" for="d13-t5"><input type="checkbox" id="d13-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: explain why R2P is not simply “a right to military intervention”.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.un.org/en/genocide-prevention" target="_blank" rel="noopener"><span>↗ UN Office on Genocide Prevention and R2P</span></a><a class="resource" href="https://www.un.org/en/genocide-prevention/responsibility-protect/about" target="_blank" rel="noopener"><span>↗ UN — About Responsibility to Protect</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Одностраничная схема prevention / early warning / atrocity prevention / R2P.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Какие риски возникают, когда систему early warning строят без доверия со стороны сообществ?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>early warning</span><span>early response</span><span>atrocity prevention</span><span>R2P</span><span>risk factor</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://kroc.nd.edu/news-events/podcasts/topics/justice/" target="_blank" rel="noopener">Kroc Cast — Wicked Problems</a><span>26:39</span><p>На этот раз слушай через dilemma of intervention: когда действие и бездействие оба несут вред.</p></div>
+    
+    <div class="notes-block"><label for="notes-13">Заметки / то, что хочется унести с собой</label><textarea id="notes-13" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-13"><input type="checkbox" id="done-13" class="day-done" data-save="check" data-day="13" data-week="2"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-14" data-week="2">
+  <summary>
+    <div class="day-index">Day 14</div>
+    <div class="day-title-wrap"><h3>Кто есть кто: UN, donors, INGOs, networks, local actors</h3><p>Понять институциональную экосистему и перестать воспринимать “international peacebuilding” как одну большую организацию.</p></div>
+    <div class="day-meta"><span>2ч 45</span><span class="day-status" id="status-14">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d14-t1"><input type="checkbox" id="d14-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Открой UN Peacebuilding site. Разберись в тройке Peacebuilding Commission / Peacebuilding Fund / Peacebuilding Support Office.</span></label><label class="task" for="d14-t2"><input type="checkbox" id="d14-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Открой DPPA и UN Peacekeeping. Зафиксируй различие political affairs / mediation / peacekeeping / peacebuilding support.</span></label><label class="task" for="d14-t3"><input type="checkbox" id="d14-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Нарисуй ecosystem map: UN bodies, regional organisations (OSCE/EU/AU etc.), governments, donors, INGOs, specialist organisations, networks, universities, local CSOs, communities.</span></label><label class="task" for="d14-t4"><input type="checkbox" id="d14-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Добавь к карте “кто платит”, “кто принимает решения”, “кто производит knowledge”, “кто несёт риски”. Это важнее логотипов.</span></label><label class="task" for="d14-t5"><input type="checkbox" id="d14-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Отметь 10 организаций, за которыми ты хочешь следить профессионально. Не подписывайся пока на всё.</span></label><label class="task" for="d14-t6"><input type="checkbox" id="d14-t6" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">15 мин</span>Weekly retrieval: 10 понятий недели без подсказки.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.un.org/peacebuilding/en" target="_blank" rel="noopener"><span>↗ UN Peacebuilding</span></a><a class="resource" href="https://www.un.org/peacebuilding/en/content/fund" target="_blank" rel="noopener"><span>↗ UN Peacebuilding Fund</span></a><a class="resource" href="https://dppa.un.org/en/" target="_blank" rel="noopener"><span>↗ UN Department of Political and Peacebuilding Affairs</span></a><a class="resource" href="https://peacekeeping.un.org/en/terminology" target="_blank" rel="noopener"><span>↗ UN Peacekeeping — Terminology</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Ecosystem map + shortlist 10 institutions.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Где в этой системе находится власть над повесткой и финансированием — и где находится lived experience?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>Peacebuilding Commission</span><span>Peacebuilding Fund</span><span>DPPA</span><span>donor</span><span>local actor</span></div></div>
+    
+    <div class="optional"><strong>Дополнительно, если хочется:</strong> Weekend deep dive: просмотри сайты Berghof Foundation, Conciliation Resources, International Alert, Inclusive Peace и GPPAC как будущая соискательница. Не читай всё. Посмотри programme areas, team bios и названия вакансий/ролей.</div>
+    <div class="notes-block"><label for="notes-14">Заметки / то, что хочется унести с собой</label><textarea id="notes-14" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-14"><input type="checkbox" id="done-14" class="day-done" data-save="check" data-day="14" data-week="2"><span>День завершён</span></label>
+  </div>
+</details>
+</section>
+<section class="week" id="week-3">
+  <div class="week-head"><div><span class="eyebrow">WEEK 3</span><h2>Неделя 3. Feminist peacebuilding, WPS, власть и включение</h2><p>Собрать не декоративную «гендерную оптику», а рабочую рамку: WPS, феминистская критика безопасности, political economy, masculinities, SGBV, queer inclusion, migration/care/human security.</p></div><div class="week-progress"><strong id="week3-pct">0%</strong><span>7 дней</span></div></div>
+  
+<details class="day-card" id="day-15" data-week="3">
+  <summary>
+    <div class="day-index">Day 15</div>
+    <div class="day-title-wrap"><h3>WPS: что на самом деле находится внутри Agenda 1325</h3><p>Получить твёрдую базу по Women, Peace and Security и сразу видеть разницу между нормативной рамкой и её реализацией.</p></div>
+    <div class="day-meta"><span>2ч 35</span><span class="day-status" id="status-15">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d15-t1"><input type="checkbox" id="d15-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Прочитай UN Women Data Hub overview. Выучи четыре pillars: participation, prevention, protection, relief &amp; recovery.</span></label><label class="task" for="d15-t2"><input type="checkbox" id="d15-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">40 мин</span>Прочитай PeaceRep “WPS at 25” (updated 2026). Посмотри на реальные данные по gender provisions in peace agreements.</span></label><label class="task" for="d15-t3"><input type="checkbox" id="d15-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сделай карту: что относится к WPS на уровнях international norms / national action plans / peace processes / local practice.</span></label><label class="task" for="d15-t4"><input type="checkbox" id="d15-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Напиши 300 слов: What WPS adds to peacebuilding — and what it can fail to change.</span></label><label class="task" for="d15-t5"><input type="checkbox" id="d15-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: explain the four pillars with one concrete example each.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://data.unwomen.org/features/where-do-we-stand-women-peace-and-security-agenda" target="_blank" rel="noopener"><span>↗ UN Women Data Hub — Where do we stand on WPS?</span></a><a class="resource" href="https://peacerep.org/2025/07/24/women-peace-and-security-at-25/" target="_blank" rel="noopener"><span>↗ PeaceRep — Women, Peace and Security at 25</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>WPS map + критический 300-word note.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Что теряется, если WPS превращается только в требование «добавить женщин»?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>WPS</span><span>UNSCR 1325</span><span>participation</span><span>protection</span><span>relief and recovery</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-15">Заметки / то, что хочется унести с собой</label><textarea id="notes-15" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-15"><input type="checkbox" id="done-15" class="day-done" data-save="check" data-day="15" data-week="3"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-16" data-week="3">
+  <summary>
+    <div class="day-index">Day 16</div>
+    <div class="day-title-wrap"><h3>Feminist peacebuilding: militarism, security, political economy</h3><p>Перейти от “gender-sensitive” к собственно феминистскому анализу того, как устроены безопасность, война, ресурсы и власть.</p></div>
+    <div class="day-meta"><span>2ч 45</span><span class="day-status" id="status-16">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d16-t1"><input type="checkbox" id="d16-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Прочитай выбранные разделы WILPF Feminist Political Economy Guide: militarism, economic structures, resources/inequality.</span></label><label class="task" for="d16-t2"><input type="checkbox" id="d16-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Посмотри WILPF Mobilising Men for Feminist Peace: какие структурные условия они связывают с насилием и militarised masculinities.</span></label><label class="task" for="d16-t3"><input type="checkbox" id="d16-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">40 мин</span>Сделай feminist security audit одного policy claim, например “security requires stronger military capacity”. Какие вопросы задаёт feminist lens?</span></label><label class="task" for="d16-t4"><input type="checkbox" id="d16-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Собери 8 тезисов “My feminist peacebuilding lens”. Разреши себе пока противоречия; это рабочий документ.</span></label><label class="task" for="d16-t5"><input type="checkbox" id="d16-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: 4-minute explanation of why gender analysis is not a niche add-on to security analysis.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.wilpf.org/publications/a-wilpf-guide-to-feminist-political-economy-edition-3/" target="_blank" rel="noopener"><span>↗ WILPF — Feminist Political Economy Guide</span></a><a class="resource" href="https://www.wilpf.org/mobilising-men-for-feminist-peace/" target="_blank" rel="noopener"><span>↗ WILPF — Mobilising Men for Feminist Peace</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>“My feminist peacebuilding lens v1” — 8 тезисов.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Чем feminist peace отличается от простой «репрезентации женщин»?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>militarism</span><span>militarised masculinity</span><span>feminist political economy</span><span>human security</span><span>gender analysis</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://www.cuspnetwork.org/the-cusp-podcast/" target="_blank" rel="noopener">CUSP Podcast — Episode 1: Women and Peacebuilding</a><span>~30–45 мин</span><p>Слушай, какие роли женщин обсуждаются: victims, participants, experts, organisers, decision-makers.</p></div>
+    
+    <div class="notes-block"><label for="notes-16">Заметки / то, что хочется унести с собой</label><textarea id="notes-16" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-16"><input type="checkbox" id="done-16" class="day-done" data-save="check" data-day="16" data-week="3"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-17" data-week="3">
+  <summary>
+    <div class="day-index">Day 17</div>
+    <div class="day-title-wrap"><h3>Masculinities, SGBV и continuum of violence</h3><p>Соединить знакомую тебе anti-violence практику с конфликтным контекстом, не сводя всё насилие к одной причине.</p></div>
+    <div class="day-meta"><span>2ч 30</span><span class="day-status" id="status-17">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d17-t1"><input type="checkbox" id="d17-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай WILPF материалы о militarised masculinities. Выпиши, как masculinity связывается с институтами, экономикой и войной.</span></label><label class="task" for="d17-t2"><input type="checkbox" id="d17-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Сделай карту continuum of violence: domestic / community / state / conflict-related. Отметь continuity и отличия.</span></label><label class="task" for="d17-t3"><input type="checkbox" id="d17-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Возьми знакомую тему domestic violence и спроси: какие элементы peacebuilding analysis добавляют к обычной GBV framework?</span></label><label class="task" for="d17-t4"><input type="checkbox" id="d17-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Сформулируй 5 ошибок, которых нужно избегать: например, “war causes all GBV” или “men are naturally violent”.</span></label><label class="task" for="d17-t5"><input type="checkbox" id="d17-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: explain militarised masculinity in plain language, without jargon.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.wilpf.org/mobilising-men-for-feminist-peace/" target="_blank" rel="noopener"><span>↗ WILPF — Mobilising Men for Feminist Peace</span></a><a class="resource" href="https://www.wilpf.org/overview-document-of-the-community-of-practice-cop/" target="_blank" rel="noopener"><span>↗ WILPF — Overview: Community of Practice on Masculinities and Peace</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Concept map: violence continuum + 5 analytical cautions.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Где anti-violence work и peacebuilding действительно совпадают, а где это разные поля?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>SGBV</span><span>CRSV</span><span>continuum of violence</span><span>militarised masculinity</span><span>prevention</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-17">Заметки / то, что хочется унести с собой</label><textarea id="notes-17" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-17"><input type="checkbox" id="done-17" class="day-done" data-save="check" data-day="17" data-week="3"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-18" data-week="3">
+  <summary>
+    <div class="day-index">Day 18</div>
+    <div class="day-title-wrap"><h3>Queering peace and security</h3><p>Понять, как сексуальность и гендерная идентичность входят в conflict/security analysis не как «ещё одна vulnerable group».</p></div>
+    <div class="day-meta"><span>2ч 25</span><span class="day-status" id="status-18">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d18-t1"><input type="checkbox" id="d18-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Прочитай PeaceRep “Reimaging Inclusive Security in Peace Processes: LGB&amp;T Perspectives”. Выпиши 5 тезисов, которые меняют обычное представление о security.</span></label><label class="task" for="d18-t2"><input type="checkbox" id="d18-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Сделай сравнительную таблицу human-rights frame / security frame / peacebuilding frame для LGBTQ+ вопросов.</span></label><label class="task" for="d18-t3"><input type="checkbox" id="d18-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Возьми один queer-community issue из знакомого тебе контекста и спроси: что мы увидим, если анализировать его как insecurity shaped by conflict/repression?</span></label><label class="task" for="d18-t4"><input type="checkbox" id="d18-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Напиши короткий критический абзац: why inclusion cannot mean simply adding an LGBTQ+ representative.</span></label><label class="task" for="d18-t5"><input type="checkbox" id="d18-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">15 мин</span>English vocabulary retrieval.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://peacerep.org/publication/reimaging-inclusive-security-in-peace-processes-lgbt-perspectives/" target="_blank" rel="noopener"><span>↗ PeaceRep — Reimaging Inclusive Security in Peace Processes: LGB&amp;T Perspectives</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Таблица HR / security / peacebuilding lens для queer issues.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Что peacebuilding может увидеть про queer insecurity, чего иногда не видит чисто правозащитный подход?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>inclusive security</span><span>intersectionality</span><span>minority security</span><span>institutional reform</span><span>inclusion</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://www.wilpf.org/stories2021/" target="_blank" rel="noopener">WILPF — Stories of Feminist Peace (audio series)</a><span>14–21 мин на эпизод</span><p>Выбери 1–2 коротких эпизода. Замечай, как звучит feminist peace вне академического языка.</p></div>
+    
+    <div class="notes-block"><label for="notes-18">Заметки / то, что хочется унести с собой</label><textarea id="notes-18" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-18"><input type="checkbox" id="done-18" class="day-done" data-save="check" data-day="18" data-week="3"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-19" data-week="3">
+  <summary>
+    <div class="day-index">Day 19</div>
+    <div class="day-title-wrap"><h3>Women’s influence: “counting women” vs реальная власть</h3><p>Разобраться, что известно об участии женщин в peace processes и почему присутствие не равно влиянию.</p></div>
+    <div class="day-meta"><span>2ч 35</span><span class="day-status" id="status-19">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d19-t1"><input type="checkbox" id="d19-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Прочитай Inclusive Peace “Women in Peace and Transition Processes” и summary Making Women Count.</span></label><label class="task" for="d19-t2"><input type="checkbox" id="d19-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Выпиши механизмы участия женщин: direct representation, observer/consultative roles, civil-society coalitions, mass action, informal influence.</span></label><label class="task" for="d19-t3"><input type="checkbox" id="d19-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сделай таблицу “presence / access / influence / decision power”. Придумай пример, где присутствие высокое, а influence низкое.</span></label><label class="task" for="d19-t4"><input type="checkbox" id="d19-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Свяжи с собственной coalition facilitation: какие условия помогают меньшей/маргинализированной группе реально влиять на решение?</span></label><label class="task" for="d19-t5"><input type="checkbox" id="d19-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: answer “Why is counting women not enough?”</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.inclusivepeace.org/project/women-in-peace-and-transition-processes/" target="_blank" rel="noopener"><span>↗ Inclusive Peace — Women in Peace and Transition Processes</span></a><a class="resource" href="https://www.inclusivepeace.org/theme-posts/women-peace-and-security/" target="_blank" rel="noopener"><span>↗ Inclusive Peace — WPS resources</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Participation–influence matrix.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Какие institutional design decisions превращают inclusion в символический жест?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>meaningful participation</span><span>influence</span><span>representation</span><span>consultation</span><span>decision-making power</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-19">Заметки / то, что хочется унести с собой</label><textarea id="notes-19" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-19"><input type="checkbox" id="done-19" class="day-done" data-save="check" data-day="19" data-week="3"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-20" data-week="3">
+  <summary>
+    <div class="day-index">Day 20</div>
+    <div class="day-title-wrap"><h3>Human security, displacement, MHPSS и care</h3><p>Поместить миграцию, психосоциальную поддержку и care infrastructure в более широкую security/peacebuilding рамку.</p></div>
+    <div class="day-meta"><span>2ч 35</span><span class="day-status" id="status-20">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d20-t1"><input type="checkbox" id="d20-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Прочитай UN “What is Human Security?”. Сравни human security с state security.</span></label><label class="task" for="d20-t2"><input type="checkbox" id="d20-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Прочитай UN Humanitarian–Development–Peace Nexus overview. Разбери, зачем вообще возникла идея nexus.</span></label><label class="task" for="d20-t3"><input type="checkbox" id="d20-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сделай карту рисков для человека/сообщества в exile: physical, legal, economic, psychosocial, political, relational. Отметь взаимосвязи.</span></label><label class="task" for="d20-t4"><input type="checkbox" id="d20-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Возьми одну support programme и спроси: это humanitarian support, development, peacebuilding или несколько сразу? Какая peacebuilding theory of change нужна, чтобы честно назвать её peacebuilding?</span></label><label class="task" for="d20-t5"><input type="checkbox" id="d20-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>English: explain “human security” and “HDP nexus” in plain language.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.un.org/humansecurity/what-is-human-security/" target="_blank" rel="noopener"><span>↗ UN Human Security Unit — What is Human Security?</span></a><a class="resource" href="https://www.un.org/peacebuilding/content/humanitarian-development-and-peace-nexus" target="_blank" rel="noopener"><span>↗ UN Peacebuilding — Humanitarian, Development and Peace Nexus</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Human-security map для displaced/exiled community.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Когда care и psychosocial support становятся peacebuilding — и когда нет?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>human security</span><span>HDP nexus</span><span>MHPSS</span><span>displacement</span><span>resilience</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://kroc.nd.edu/news-events/podcasts/topics/peacebuilding/" target="_blank" rel="noopener">Kroc Cast — Pop Culture, Youth, and Peacebuilding</a><span>20:16</span><p>Лёгкий эпизод: отмечай, как peacebuilding practice выходит за пределы дипломатических институтов.</p></div>
+    
+    <div class="notes-block"><label for="notes-20">Заметки / то, что хочется унести с собой</label><textarea id="notes-20" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-20"><input type="checkbox" id="done-20" class="day-done" data-save="check" data-day="20" data-week="3"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-21" data-week="3">
+  <summary>
+    <div class="day-index">Day 21</div>
+    <div class="day-title-wrap"><h3>Синтез II: сформулировать своё feminist peacebuilding</h3><p>Собрать неделю в собственную позицию, а не набор терминов.</p></div>
+    <div class="day-meta"><span>2ч 45</span><span class="day-status" id="status-21">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d21-t1"><input type="checkbox" id="d21-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Без материалов выпиши 4 pillars WPS, 5 критик “add women and stir”, 5 элементов feminist security analysis.</span></label><label class="task" for="d21-t2"><input type="checkbox" id="d21-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">55 мин</span>Напиши 700–900 слов по-русски: “Что для меня значит feminist peacebuilding сейчас”. Обязательно включи power, material conditions, accountability, gender/sexuality, care и limits of dialogue.</span></label><label class="task" for="d21-t3"><input type="checkbox" id="d21-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сожми текст до 250–300 слов на английском. Не перевод слово-в-слово: сделай professional statement.</span></label><label class="task" for="d21-t4"><input type="checkbox" id="d21-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Прочитай английский текст вслух и перепиши только те места, которые ты сама никогда бы не сказала.</span></label><label class="task" for="d21-t5"><input type="checkbox" id="d21-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Отметь три вопроса, по которым у тебя пока нет позиции. Это не пробел, а research agenda.</span></label></div>
+    
+    <div class="output"><h4>Результат дня</h4><p>Russian position paper + 250–300-word English feminist peacebuilding statement.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Какие популярные peacebuilding идеи ты уже сейчас не готова принимать без критики?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>feminist peacebuilding</span><span>accountability</span><span>care</span><span>material conditions</span><span>intersectionality</span></div></div>
+    
+    <div class="optional"><strong>Дополнительно, если хочется:</strong> Weekend book lane: Cynthia Enloe, Bananas, Beaches and Bases ИЛИ Claire Duncanson, Gender and Peacebuilding. Выбери одну, не обе; цель — углубить язык, а не закрыть список чтения.</div>
+    <div class="notes-block"><label for="notes-21">Заметки / то, что хочется унести с собой</label><textarea id="notes-21" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-21"><input type="checkbox" id="done-21" class="day-done" data-save="check" data-day="21" data-week="3"><span>День завершён</span></label>
+  </div>
+</details>
+</section>
+<section class="week" id="week-4">
+  <div class="week-head"><div><span class="eyebrow">WEEK 4</span><h2>Неделя 4. После насилия: justice, reconciliation, программы и профессия</h2><p>Различать dealing with the past, transitional/restorative justice и reconciliation; знать соседние технические области; понимать, как проектируется peacebuilding intervention и где именно ты хочешь профессионально находиться.</p></div><div class="week-progress"><strong id="week4-pct">0%</strong><span>9 дней</span></div></div>
+  
+<details class="day-card" id="day-22" data-week="4">
+  <summary>
+    <div class="day-index">Day 22</div>
+    <div class="day-title-wrap"><h3>Dealing with the Past, Transitional Justice, Reconciliation: развести понятия</h3><p>Собрать терминологическую карту области, которая особенно связана с твоей книгой.</p></div>
+    <div class="day-meta"><span>2ч 40</span><span class="day-status" id="status-22">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d22-t1"><input type="checkbox" id="d22-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Прочитай Berghof “Dealing with the Past”. Зафиксируй, почему прошлое рассматривается как часть текущего конфликта.</span></label><label class="task" for="d22-t2"><input type="checkbox" id="d22-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай ICTJ “What is Transitional Justice?”. Выпиши основные механизмы: prosecutions, truth, reparations, institutional reform и др.</span></label><label class="task" for="d22-t3"><input type="checkbox" id="d22-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Прочитай введение Conciliation Resources к Reconciliation and Peace Processes. Обрати внимание на horizontal и vertical relationships.</span></label><label class="task" for="d22-t4"><input type="checkbox" id="d22-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">40 мин</span>Сделай карту понятий: dealing with the past / transitional justice / restorative justice / reconciliation / memorialisation. Где пересечения, где нельзя ставить знак равенства?</span></label><label class="task" for="d22-t5"><input type="checkbox" id="d22-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>English: explain transitional justice without saying “justice after transition”.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://berghof-foundation.org/themes/dealing-with-the-past" target="_blank" rel="noopener"><span>↗ Berghof — Dealing with the Past</span></a><a class="resource" href="https://www.ictj.org/sites/default/files/ICTJ-Global-Transitional-Justice-2009-English.pdf" target="_blank" rel="noopener"><span>↗ ICTJ — What is Transitional Justice?</span></a><a class="resource" href="https://www.c-r.org/id/accord/reconciliation-and-peace-processes-insight" target="_blank" rel="noopener"><span>↗ Conciliation Resources — Reconciliation and Peace Processes</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Concept map of post-violence fields.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Почему reconciliation без justice может восприниматься как требование забыть или простить?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>dealing with the past</span><span>transitional justice</span><span>reconciliation</span><span>reparations</span><span>memorialisation</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-22">Заметки / то, что хочется унести с собой</label><textarea id="notes-22" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-22"><input type="checkbox" id="done-22" class="day-done" data-save="check" data-day="22" data-week="4"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-23" data-week="4">
+  <summary>
+    <div class="day-index">Day 23</div>
+    <div class="day-title-wrap"><h3>Transitional justice: механизмы и современная Украина</h3><p>Посмотреть, как accountability и victim-centred justice обсуждаются не абстрактно, а в продолжающейся войне.</p></div>
+    <div class="day-meta"><span>2ч 45</span><span class="day-status" id="status-23">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d23-t1"><input type="checkbox" id="d23-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай ICTJ Ukraine country page. Обрати внимание на prosecutions + reparations + less visible survivors + social cohesion.</span></label><label class="task" for="d23-t2"><input type="checkbox" id="d23-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Прочитай summary/ключевые выводы ICTJ 2026 “Myths and Ways Forward: Transitional Justice for Ukraine”. Не надо воспринимать как единственно возможную модель — анализируй аргументацию.</span></label><label class="task" for="d23-t3"><input type="checkbox" id="d23-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сделай таблицу mechanisms → цель → риски → кто должен иметь voice.</span></label><label class="task" for="d23-t4"><input type="checkbox" id="d23-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Напиши 5 различий между accountability и punishment. Затем 5 вопросов, которые книга с Ниной могла бы исследовать глубже.</span></label><label class="task" for="d23-t5"><input type="checkbox" id="d23-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: 4 minutes on why transitional justice can begin before a conflict is “over”.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.ictj.org/where-we-work/ukraine" target="_blank" rel="noopener"><span>↗ ICTJ — Ukraine</span></a><a class="resource" href="https://www.ictj.org/latest-news/ictj-report-calls-comprehensive-transitional-justice-framework-ukraine" target="_blank" rel="noopener"><span>↗ ICTJ 2026 — Myths and Ways Forward: Transitional Justice for Ukraine</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>TJ mechanisms matrix + research questions for the book.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Что означает victim-centred justice, если у пострадавших разные и конфликтующие представления о справедливости?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>accountability</span><span>victim-centred justice</span><span>truth-seeking</span><span>reparations</span><span>institutional reform</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://kroc.nd.edu/news-events/podcasts/topics/conflict-transformation/" target="_blank" rel="noopener">Kroc Cast — Preserving Voices, Confronting Violence: Insights from the Legacy Project</a><span>47:53</span><p>Colombia: truth commission, memory, multiplicity, agonistic transitional justice. Сравни с Day 23, не переносись автоматически из одного контекста в другой.</p></div>
+    
+    <div class="notes-block"><label for="notes-23">Заметки / то, что хочется унести с собой</label><textarea id="notes-23" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-23"><input type="checkbox" id="done-23" class="day-done" data-save="check" data-day="23" data-week="4"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-24" data-week="4">
+  <summary>
+    <div class="day-index">Day 24</div>
+    <div class="day-title-wrap"><h3>Restorative justice, reconciliation и отношения после насилия</h3><p>Разобраться, что именно restorative approaches могут и не могут делать в больших политических конфликтах.</p></div>
+    <div class="day-meta"><span>2ч 35</span><span class="day-status" id="status-24">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d24-t1"><input type="checkbox" id="d24-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Просмотри UNODC Handbook on Restorative Justice: introduction, principles, базовые models. Не читай весь handbook.</span></label><label class="task" for="d24-t2"><input type="checkbox" id="d24-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Выбери 1–2 текста из Conciliation Resources reconciliation issue (Colombia / Northern Ireland / Mindanao).</span></label><label class="task" for="d24-t3"><input type="checkbox" id="d24-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сделай compare &amp; contrast: retributive / restorative / transitional approaches. Не превращай их в взаимоисключающие идеологии.</span></label><label class="task" for="d24-t4"><input type="checkbox" id="d24-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Сформулируй “limits test”: в каких условиях restorative process может быть небезопасным, преждевременным или использоваться для ухода от ответственности?</span></label><label class="task" for="d24-t5"><input type="checkbox" id="d24-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: explain why reconciliation is not the same as forgiveness.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.unodc.org/documents/justice-and-prison-reform/20-01146_Handbook_on_Restorative_Justice_Programmes.pdf" target="_blank" rel="noopener"><span>↗ UNODC — Handbook on Restorative Justice Programmes, 2nd ed.</span></a><a class="resource" href="https://www.c-r.org/id/accord/reconciliation-and-peace-processes-insight" target="_blank" rel="noopener"><span>↗ Conciliation Resources — Reconciliation and Peace Processes</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Justice approaches comparison + limits test.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Можно ли строить отношения после войны без общей версии прошлого?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>restorative justice</span><span>retributive justice</span><span>reconciliation</span><span>acknowledgement</span><span>forgiveness</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-24">Заметки / то, что хочется унести с собой</label><textarea id="notes-24" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-24"><input type="checkbox" id="done-24" class="day-done" data-save="check" data-day="24" data-week="4"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-25" data-week="4">
+  <summary>
+    <div class="day-index">Day 25</div>
+    <div class="day-title-wrap"><h3>DDR, protection of civilians, humanitarian action: знать соседние комнаты</h3><p>Не становиться специалисткой за день, а понимать, о чём говорят коллеги из operational peace/security field.</p></div>
+    <div class="day-meta"><span>2ч 30</span><span class="day-status" id="status-25">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d25-t1"><input type="checkbox" id="d25-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай UN DDR overview. Разбери disarmament / demobilisation / reintegration и связь с political process / community violence reduction.</span></label><label class="task" for="d25-t2"><input type="checkbox" id="d25-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Вернись к R2P и выпиши, чем protection of civilians / atrocity prevention / R2P отличаются концептуально.</span></label><label class="task" for="d25-t3"><input type="checkbox" id="d25-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Прочитай краткий обзор HDP Nexus и зафиксируй принцип: humanitarian action имеет собственную логику и не должна автоматически становиться peacebuilding.</span></label><label class="task" for="d25-t4"><input type="checkbox" id="d25-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сделай “neighbouring fields cheat sheet”: DDR, SSR, humanitarian assistance, protection, MHPSS, development. По 2 предложения на каждое.</span></label><label class="task" for="d25-t5"><input type="checkbox" id="d25-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Отметь, что тебе интересно только понимать, а что теоретически могло бы стать специализацией.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://peacekeeping.un.org/en/disarmament-demobilization-and-reintegration" target="_blank" rel="noopener"><span>↗ UN Peacekeeping — DDR</span></a><a class="resource" href="https://www.un.org/en/genocide-prevention/responsibility-protect/about" target="_blank" rel="noopener"><span>↗ UN — Responsibility to Protect</span></a><a class="resource" href="https://www.un.org/peacebuilding/content/humanitarian-development-and-peace-nexus" target="_blank" rel="noopener"><span>↗ UN — Humanitarian, Development and Peace Nexus</span></a><a class="resource" href="https://www.who.int/publications/i/item/9789240121706" target="_blank" rel="noopener"><span>↗ WHO 2026 — DDR + MHPSS operational guidance</span><span class="res-note">optional current example of cross-field work</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>One-page neighbouring-fields cheat sheet.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Почему важно не называть любую помощь в кризисе peacebuilding?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>DDR</span><span>SSR</span><span>protection of civilians</span><span>humanitarian action</span><span>community violence reduction</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-25">Заметки / то, что хочется унести с собой</label><textarea id="notes-25" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-25"><input type="checkbox" id="done-25" class="day-done" data-save="check" data-day="25" data-week="4"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-26" data-week="4">
+  <summary>
+    <div class="day-index">Day 26</div>
+    <div class="day-title-wrap"><h3>Как проектируют peacebuilding programme: Theory of Change и PMEL</h3><p>Понять, почему “провести 10 диалогов” — activity, а не peacebuilding result.</p></div>
+    <div class="day-meta"><span>2ч 50</span><span class="day-status" id="status-26">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d26-t1"><input type="checkbox" id="d26-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Открой Peacebuilding Design, Monitoring and Evaluation package. Просмотри modules 2–4: conflict analysis, program design, MEL.</span></label><label class="task" for="d26-t2"><input type="checkbox" id="d26-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Открой UN Peacebuilding guides/resources и Theory of Change materials. Найди связь conflict analysis → intended change → assumptions.</span></label><label class="task" for="d26-t3"><input type="checkbox" id="d26-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">50 мин</span>Спроектируй маленький hypothetical project: проблема, target change, activities, outputs, outcomes, assumptions, risks. Запрет: “люди поговорят и поэтому будет мир”. Распиши механизм изменения.</span></label><label class="task" for="d26-t4"><input type="checkbox" id="d26-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Придумай 3 outcome indicators и 2 unintended-effect indicators.</span></label><label class="task" for="d26-t5"><input type="checkbox" id="d26-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>English: pitch the theory of change in 3 minutes using “If… then… because… assuming…”</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.peaceinfrastructures.org/documents/peacebuilding-design-monitoring-and-evaluation-training-package-participants-and-trainers" target="_blank" rel="noopener"><span>↗ Peace Infrastructures — Peacebuilding Design, Monitoring and Evaluation Training Package</span></a><a class="resource" href="https://www.un.org/peacebuilding/en/content/guidance-notes" target="_blank" rel="noopener"><span>↗ UN Peacebuilding — Guidance Notes</span></a><a class="resource" href="https://www.un.org/peacebuilding/en/content/guides-and-resources" target="_blank" rel="noopener"><span>↗ UN Peacebuilding — Guides and Resources</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Mini Theory of Change + 5 indicators.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Какие assumptions в твоём project design наиболее политические и наименее проверенные?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>Theory of Change</span><span>output</span><span>outcome</span><span>indicator</span><span>adaptive management</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://kroc.nd.edu/news-events/podcasts/topics/peace-accords-matrix-project/" target="_blank" rel="noopener">Kroc Cast — Beyond the Timeline: “Slow Peace”</a><span>1:01:05</span><p>Слушай через вопрос PMEL: что измеримые project indicators обычно не ловят?</p></div>
+    
+    <div class="notes-block"><label for="notes-26">Заметки / то, что хочется унести с собой</label><textarea id="notes-26" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-26"><input type="checkbox" id="done-26" class="day-done" data-save="check" data-day="26" data-week="4"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-27" data-week="4">
+  <summary>
+    <div class="day-index">Day 27</div>
+    <div class="day-title-wrap"><h3>Localisation, decolonisation и Shift the Power</h3><p>Критически посмотреть на international peacebuilding как индустрию: кто определяет проблему, владеет деньгами и считается экспертом.</p></div>
+    <div class="day-meta"><span>2ч 30</span><span class="day-status" id="status-27">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d27-t1"><input type="checkbox" id="d27-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Вернись к UN Local Peacebuilding Review: перечитай рекомендации про flexible funding, institutional strengthening, volunteerism и local-national linkages.</span></label><label class="task" for="d27-t2"><input type="checkbox" id="d27-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Сравни понятия localisation и decolonisation. Своими словами: почему это не синонимы.</span></label><label class="task" for="d27-t3"><input type="checkbox" id="d27-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Сделай power audit гипотетического гранта: donor → INGO → local NGO → community. Где решения, overhead, reporting burden, risk и knowledge extraction?</span></label><label class="task" for="d27-t4"><input type="checkbox" id="d27-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Напиши 6 принципов партнёрства, которые ты считала бы приемлемыми для работы с local actors.</span></label><label class="task" for="d27-t5"><input type="checkbox" id="d27-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: explain why “local ownership” can be used rhetorically while power remains international.</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.un.org/peacebuilding/en/content/local-peacebuilding-2022" target="_blank" rel="noopener"><span>↗ UN — Thematic Review on Local Peacebuilding</span></a><a class="resource" href="https://www.un.org/peacebuilding/en/content/un-community-engagement-guidelines-peacebuilding-and-sustaining-peace-0" target="_blank" rel="noopener"><span>↗ UN — Community Engagement Guidelines</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Donor-to-community power audit + 6 partnership principles.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Какие формы “participation” не меняют распределение власти вообще?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>localisation</span><span>decolonisation</span><span>Shift the Power</span><span>local ownership</span><span>extractive practice</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-27">Заметки / то, что хочется унести с собой</label><textarea id="notes-27" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-27"><input type="checkbox" id="done-27" class="day-done" data-save="check" data-day="27" data-week="4"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-28" data-week="4">
+  <summary>
+    <div class="day-index">Day 28</div>
+    <div class="day-title-wrap"><h3>Media, narratives, memory и conflict-sensitive journalism</h3><p>Связать журналистский опыт с peacebuilding без идеи, что журналистика обязана быть “за мир” вместо профессиональной независимости.</p></div>
+    <div class="day-meta"><span>2ч 35</span><span class="day-status" id="status-28">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d28-t1"><input type="checkbox" id="d28-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Прочитай UNESCO Conflict-Sensitive Reporting overview. Выпиши, что предлагается менять в журналистской практике и что должно остаться журналистикой.</span></label><label class="task" for="d28-t2"><input type="checkbox" id="d28-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Вернись к dealing with the past и подумай о narratives/memory: кто говорит, какие голоса архивируются, что становится “официальным прошлым”.</span></label><label class="task" for="d28-t3"><input type="checkbox" id="d28-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">40 мин</span>Возьми одну свою опубликованную статью о насилии/войне/репрессиях. Сделай retrospective conflict-sensitivity review: framing, agency, labels, asymmetries, affected groups, possible unintended effects.</span></label><label class="task" for="d28-t4"><input type="checkbox" id="d28-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Напиши 5 принципов для собственной journalism/peacebuilding boundary.</span></label><label class="task" for="d28-t5"><input type="checkbox" id="d28-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: “Conflict-sensitive journalism is not peace propaganda because…”</span></label></div>
+    <div class="resources"><h4>Материалы</h4><a class="resource" href="https://www.unesco.org/en/articles/conflict-sensitive-reporting-state-art" target="_blank" rel="noopener"><span>↗ UNESCO — Conflict-Sensitive Reporting: State of the Art</span></a><a class="resource" href="https://berghof-foundation.org/themes/dealing-with-the-past" target="_blank" rel="noopener"><span>↗ Berghof — Dealing with the Past</span></a></div>
+    <div class="output"><h4>Результат дня</h4><p>Conflict-sensitivity review одной собственной публикации.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Когда требование “не усиливать конфликт” может вступать в конфликт с задачей назвать насилие и ответственность?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>conflict-sensitive journalism</span><span>narrative</span><span>memory</span><span>framing</span><span>hate speech</span></div></div>
+    <div class="gym"><div class="gym-tag">🎧 Зал / прогулка · не входит в 2–3 часа</div><a href="https://kroc.nd.edu/news-events/podcasts/topics/conflict-transformation/" target="_blank" rel="noopener">Kroc Cast — Preserving Voices, Confronting Violence</a><span>47:53</span><p>На этот раз слушай про архив, голоса, narrative plurality и память.</p></div>
+    
+    <div class="notes-block"><label for="notes-28">Заметки / то, что хочется унести с собой</label><textarea id="notes-28" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-28"><input type="checkbox" id="done-28" class="day-done" data-save="check" data-day="28" data-week="4"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-29" data-week="4">
+  <summary>
+    <div class="day-index">Day 29</div>
+    <div class="day-title-wrap"><h3>Моя карта профессии: куда я хочу и куда не хочу</h3><p>Перевести месяц обучения в карьерное решение, а не оставить его интеллектуальным хобби.</p></div>
+    <div class="day-meta"><span>2ч 55</span><span class="day-status" id="status-29">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d29-t1"><input type="checkbox" id="d29-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Открой интерактивную “Карту направлений” ниже на этой странице. Для каждого поля поставь Interest 1–5 и Fit now 1–5.</span></label><label class="task" for="d29-t2"><input type="checkbox" id="d29-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">35 мин</span>Выбери 6 направлений с высоким интересом. Для каждого напиши: что там делают каждый день, какие организации нанимают, какой evidence of practice нужен.</span></label><label class="task" for="d29-t3"><input type="checkbox" id="d29-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Отбрось минимум 5 направлений: “интересно знать, но не хочу профессионально”. Это важная часть ориентации.</span></label><label class="task" for="d29-t4"><input type="checkbox" id="d29-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">40 мин</span>Выбери 3 карьерных кластера. Рекомендуемый старт для проверки: (A) dialogue/conflict transformation; (B) feminist peacebuilding/WPS; (C) civil society/community peacebuilding/dealing with past. Можешь выбрать иначе.</span></label><label class="task" for="d29-t5"><input type="checkbox" id="d29-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Для каждого кластера сформулируй entry roles, которых ты уже не слишком junior, но и не выдаёшь себя за senior peace-process mediator.</span></label><label class="task" for="d29-t6"><input type="checkbox" id="d29-t6" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>English: answer “What kind of peacebuilding work are you moving into?” three different ways: 30 sec / 90 sec / 3 min.</span></label></div>
+    
+    <div class="output"><h4>Результат дня</h4><p>Career field map: Top-3 clusters + 5 “not for me” + role shortlist.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Что ты поняла, что НЕ хочешь делать? Это так же важно, как список интересов.</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>professional positioning</span><span>specialisation</span><span>entry role</span><span>transferable experience</span><span>practice gap</span></div></div>
+    
+    
+    <div class="notes-block"><label for="notes-29">Заметки / то, что хочется унести с собой</label><textarea id="notes-29" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-29"><input type="checkbox" id="done-29" class="day-done" data-save="check" data-day="29" data-week="4"><span>День завершён</span></label>
+  </div>
+</details>
+<details class="day-card" id="day-30" data-week="4">
+  <summary>
+    <div class="day-index">Day 30</div>
+    <div class="day-title-wrap"><h3>Capstone: я могу разговаривать с полем на его языке</h3><p>Проверить не память терминов, а способность связно мыслить, объяснять и позиционировать себя.</p></div>
+    <div class="day-meta"><span>3ч 00</span><span class="day-status" id="status-30">не начато</span></div>
+  </summary>
+  <div class="day-body">
+    <div class="tasks"><h4>Что делать</h4><label class="task" for="d30-t1"><input type="checkbox" id="d30-t1" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">25 мин</span>Без конспектов напиши карту peacebuilding field с нуля. Потом сравни с Day 1.</span></label><label class="task" for="d30-t2"><input type="checkbox" id="d30-t2" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">45 мин</span>Подготовь 10-minute English briefing: “How I understand the peacebuilding field, the tensions inside it, and where my practice fits.” Структура: field → 3 debates → your experience → next specialisation.</span></label><label class="task" for="d30-t3"><input type="checkbox" id="d30-t3" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Запиши briefing одним дублем. Не останавливайся для исправлений.</span></label><label class="task" for="d30-t4"><input type="checkbox" id="d30-t4" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Прослушай. Оцени 1–5: conceptual accuracy, structure, vocabulary, confidence, ability to distinguish concepts. Запиши только 5 главных gaps.</span></label><label class="task" for="d30-t5"><input type="checkbox" id="d30-t5" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">30 мин</span>Напиши 250-word professional bio/positioning statement для peacebuilding applications. Не называй себя тем, чем ты ещё не работала; покажи переход и конкретную практику.</span></label><label class="task" for="d30-t6"><input type="checkbox" id="d30-t6" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">20 мин</span>Составь 90-day plan: 1 knowledge gap, 1 practice gap, 1 network goal, 1 application/fellowship goal, 1 public output.</span></label><label class="task" for="d30-t7"><input type="checkbox" id="d30-t7" data-save="check"><span class="checkmark"></span><span class="task-copy"><span class="time">10 мин</span>Экспортируй notes/progress из этой страницы и сохрани рядом с CV.</span></label></div>
+    
+    <div class="output"><h4>Результат дня</h4><p>10-minute English briefing + 250-word professional positioning + 90-day plan.</p></div>
+    <div class="reflection"><h4>Вопрос дня</h4><p>Если завтра за столом окажутся peacebuilders из разных стран, о каких трёх темах ты уже сможешь говорить содержательно, а не только задавать вопросы?</p></div>
+    <div class="vocab"><h4>English field vocabulary</h4><div><span>field fluency</span><span>professional identity</span><span>learning agenda</span><span>practice evidence</span><span>next step</span></div></div>
+    
+    <div class="optional"><strong>Дополнительно, если хочется:</strong> Через 4–6 недель снова запиши тот же 10-minute briefing без подготовки. Это даст более честный показатель освоения, чем ещё один сертификат.</div>
+    <div class="notes-block"><label for="notes-30">Заметки / то, что хочется унести с собой</label><textarea id="notes-30" data-save="text" placeholder="Пиши как угодно: тезисы, вопросы, непонятные места, фразы на английском…"></textarea></div>
+    <label class="complete-day" for="done-30"><input type="checkbox" id="done-30" class="day-done" data-save="check" data-day="30" data-week="4"><span>День завершён</span></label>
+  </div>
+</details>
+</section>
+
+<section id="courses" class="section-title"><span class="eyebrow">PARALLEL TRACK</span><h2>Курсы, которые ты проходишь отдельно</h2><p>Они сознательно не включены в 2–3 часа дневного плана. Галочки здесь не влияют на основной прогресс. Первые пять — мой рекомендуемый набор; дальше расширять список пока не нужно.</p></section>
+<section class="courses">
+<label class="course-card"><input type="checkbox" id="course-1" data-save="check"><span class="course-check">✓</span><span class="course-main"><strong>UNICEF — Introduction to risk-informed, conflict-sensitive and peacebuilding programming</strong><span>120 мин · core</span><p>Практический мост от conflict analysis к programme design, Do No Harm, resilience и social cohesion. Лучше после Week 1.</p><a href="https://agora.unicef.org/course/info.php?id=24589" target="_blank" rel="noopener">Открыть курс ↗</a></span></label>
+<label class="course-card"><input type="checkbox" id="course-2" data-save="check"><span class="course-check">✓</span><span class="course-main"><strong>UNSSC — Nelson Mandela Online Learning Path for Social Change</strong><span>12 часов · core</span><p>Про power, polarization, inequality, bridging divides и systems thinking. Бесплатно; enrolment по состоянию на 6 Oct 2026 — до 31 Dec 2026. Растянуть на Week 2–4.</p><a href="https://www.unssc.org/courses/nelson-mandela-online-learning-path-social-change" target="_blank" rel="noopener">Открыть курс ↗</a></span></label>
+<label class="course-card"><input type="checkbox" id="course-3" data-save="check"><span class="course-check">✓</span><span class="course-main"><strong>UNITAR — Women-Led Mediation and Conflict Prevention</strong><span>~1 час · core</span><p>Короткий вход в mediation, conflict prevention и WPS. Логично после Day 9 и до Day 19.</p><a href="https://event.unitar.org/full-catalog/women-led-mediation-and-conflict-prevention-micro-course" target="_blank" rel="noopener">Открыть курс ↗</a></span></label>
+<label class="course-card"><input type="checkbox" id="course-4" data-save="check"><span class="course-check">✓</span><span class="course-main"><strong>UN Women Training Centre — I Know Gender 11: Women, Peace and Security</strong><span>~50 мин · core</span><p>Очень короткая, но полезная базовая сборка WPS: международная рамка, gender в peace &amp; security и примеры implementation. Бесплатно, self-paced, доступно круглый год.</p><a href="https://portal.trainingcentre.unwomen.org/product/i-know-gender-11-women-peace-and-security/" target="_blank" rel="noopener">Открыть курс ↗</a></span></label>
+<label class="course-card"><input type="checkbox" id="course-5" data-save="check"><span class="course-check">✓</span><span class="course-main"><strong>UNITAR — Conflict Series 2: Conflict Analysis</strong><span>~4 часа · core</span><p>Отдельно закрепить levels, spheres, causes и actors of conflict analysis. Бесплатный self-paced курс; после выполнения выдаётся badge. Лучше после Day 4–5.</p><a href="https://event.unitar.org/full-catalog/conflict-series-2-conflict-analysis-ptp202602-1" target="_blank" rel="noopener">Открыть курс ↗</a></span></label>
+</section>
+<div class="optional"><strong>Не обязательный шестой:</strong> если после Week 2 захочется ещё одной структурированной рамки, можно пройти UNITAR <a href="https://event.unitar.org/full-catalog/conflict-series-3-conflict-peace-ptp202603-1" target="_blank" rel="noopener">From Conflict to Peace</a> (~4 часа) про negotiation, mediation и humanitarian negotiation. Я бы не ставила его выше пяти курсов выше: он заметно пересекается с Day 8–10.</div>
+
+<section id="field-map" class="section-title"><span class="eyebrow">REFERENCE + DAY 29 TOOL</span><h2>Карта направлений</h2><p>Это почти вся картинка из GPPAC application. К Day 29 поставь каждому направлению две оценки: насколько тебе интересно и насколько твой опыт уже даёт вход. Они сохраняются только в браузере на этом устройстве.</p></section>
+<div class="field-controls"><input id="field-search" type="search" placeholder="Найти направление…"><button class="btn" id="clear-ratings">Очистить оценки</button></div>
+<div class="field-grid" id="field-grid">
+<div class="field-card" data-field-name="capacity strengthening">
+  <div class="field-top"><div><span class="field-cat">Инструмент/практика</span><h3>Capacity Strengthening</h3></div></div>
+  <p>Развитие навыков, систем и устойчивости организаций, команд и сообществ.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-1-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-1-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-1-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="research and analysis">
+  <div class="field-top"><div><span class="field-cat">Инструмент/практика</span><h3>Research and Analysis</h3></div></div>
+  <p>Conflict analysis, исследования причин насилия, акторов, сценариев и эффективности interventions.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-2-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-2-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-2-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="youth, peace and security (yps)">
+  <div class="field-top"><div><span class="field-cat">Тематическая agenda</span><h3>Youth, Peace and Security (YPS)</h3></div></div>
+  <p>Участие молодых людей в prevention, peacebuilding и принятии решений; UNSCR 2250 и последующие резолюции.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-3-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-3-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-3-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="women, peace and security (wps)">
+  <div class="field-top"><div><span class="field-cat">Тематическая agenda</span><h3>Women, Peace and Security (WPS)</h3></div></div>
+  <p>Participation, prevention, protection, relief &amp; recovery; гендерная перспектива в peace and security.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-4-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-4-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-4-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="gender and masculinities">
+  <div class="field-top"><div><span class="field-cat">Тематическая область</span><h3>Gender and Masculinities</h3></div></div>
+  <p>Гендерные нормы, militarised masculinities, власть, насилие и мир.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-5-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-5-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-5-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="sexual and gender-based violence (sgbv)">
+  <div class="field-top"><div><span class="field-cat">Тематическая область</span><h3>Sexual and Gender-Based Violence (SGBV)</h3></div></div>
+  <p>Предотвращение и последствия sexual/gender-based violence в конфликтах, кризисах и displacement.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-6-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-6-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-6-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="sexual and reproductive rights">
+  <div class="field-top"><div><span class="field-cat">Смежная область</span><h3>Sexual and Reproductive Rights</h3></div></div>
+  <p>Репродуктивные права в контекстах войны, миграции, неравенства и государственного контроля.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-7-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-7-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-7-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="advocacy and policy influencing">
+  <div class="field-top"><div><span class="field-cat">Практика</span><h3>Advocacy and Policy Influencing</h3></div></div>
+  <p>Изменение policies, законодательства, финансирования и институциональных практик.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-8-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-8-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-8-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="mediation and dialogue facilitation">
+  <div class="field-top"><div><span class="field-cat">Ядро peacebuilding</span><h3>Mediation and Dialogue Facilitation</h3></div></div>
+  <p>Проектирование и ведение процессов между конфликтующими акторами; mediation требует отдельной политической и процессной компетентности.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-9-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-9-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-9-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="peace education">
+  <div class="field-top"><div><span class="field-cat">Практика</span><h3>Peace Education</h3></div></div>
+  <p>Обучение ненасильственному конфликту, правам, pluralism, historical memory и peace skills.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-10-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-10-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-10-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="peace volunteerism">
+  <div class="field-top"><div><span class="field-cat">Модель участия</span><h3>Peace Volunteerism</h3></div></div>
+  <p>Волонтёрское участие в local peacebuilding, accompaniment, dialogue, education и community work.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-11-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-11-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-11-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="climate / environment">
+  <div class="field-top"><div><span class="field-cat">Тематическая область</span><h3>Climate / Environment</h3></div></div>
+  <p>Связь ресурсов, климата, livelihoods, displacement и конфликтных динамик.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-12-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-12-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-12-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="conflict-sensitive development">
+  <div class="field-top"><div><span class="field-cat">Подход</span><h3>Conflict-sensitive Development</h3></div></div>
+  <p>Development/humanitarian work, которое анализирует конфликт и минимизирует риск непреднамеренного вреда.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-13-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-13-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-13-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="mental health &amp; psychosocial support (mhpss)">
+  <div class="field-top"><div><span class="field-cat">Смежная практика</span><h3>Mental Health &amp; Psychosocial Support (MHPSS)</h3></div></div>
+  <p>Психосоциальное восстановление и social inclusion в conflict/post-conflict settings; не вся MHPSS автоматически peacebuilding.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-14-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-14-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-14-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="media and journalism">
+  <div class="field-top"><div><span class="field-cat">Смежная практика</span><h3>Media and Journalism</h3></div></div>
+  <p>Conflict-sensitive reporting, narratives, hate speech, media in polarisation/reconciliation.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-15-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-15-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-15-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="human rights">
+  <div class="field-top"><div><span class="field-cat">Смежная основа</span><h3>Human Rights</h3></div></div>
+  <p>Rights-based work, accountability и защита достоинства; пересекается с peacebuilding, но не тождественно ему.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-16-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-16-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-16-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="migration and refugee rights">
+  <div class="field-top"><div><span class="field-cat">Тематическая область</span><h3>Migration and Refugee Rights</h3></div></div>
+  <p>Displacement, durable solutions, host-community relations, rights and inclusion.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-17-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-17-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-17-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="civil and economic rights">
+  <div class="field-top"><div><span class="field-cat">Тематическая область</span><h3>Civil and Economic Rights</h3></div></div>
+  <p>Гражданские, политические, социально-экономические права как часть структурных причин/условий мира.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-18-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-18-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-18-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="human security">
+  <div class="field-top"><div><span class="field-cat">Рамка</span><h3>Human Security</h3></div></div>
+  <p>Безопасность человека и достоинства, а не только государства; people-centred, comprehensive, prevention-oriented approach.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-19-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-19-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-19-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="memorialisation">
+  <div class="field-top"><div><span class="field-cat">Dealing with the past</span><h3>Memorialisation</h3></div></div>
+  <p>Архивы, мемориалы, ритуалы памяти, oral history и политика того, как общество помнит насилие.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-20-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-20-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-20-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="social cohesion">
+  <div class="field-top"><div><span class="field-cat">Результат/область</span><h3>Social Cohesion</h3></div></div>
+  <p>Доверие, связи, cooperation и отношения между группами и институтами; термин нужно использовать конкретно, а не как универсальное “всё хорошо”.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-21-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-21-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-21-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="dealing with the past">
+  <div class="field-top"><div><span class="field-cat">Post-conflict / justice</span><h3>Dealing with the Past</h3></div></div>
+  <p>Широкая работа с наследием насилия: truth, narratives, acknowledgement, justice, memory.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-22-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-22-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-22-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="reconciliation">
+  <div class="field-top"><div><span class="field-cat">Post-conflict / relational</span><h3>Reconciliation</h3></div></div>
+  <p>Трансформация horizontal и vertical relationships после насилия; не равно прощению или забвению.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-23-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-23-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-23-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="community-based approaches">
+  <div class="field-top"><div><span class="field-cat">Подход</span><h3>Community-based Approaches</h3></div></div>
+  <p>Peacebuilding, которое опирается на local communities, локальные динамики, participation и ownership.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-24-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-24-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-24-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="pmel">
+  <div class="field-top"><div><span class="field-cat">Инструмент</span><h3>PMEL</h3></div></div>
+  <p>Planning, Monitoring, Evaluation and Learning; как проект связывает activities с peacebuilding outcomes и учится по ходу.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-25-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-25-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-25-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="business &amp; human rights / private sector">
+  <div class="field-top"><div><span class="field-cat">Смежная область</span><h3>Business &amp; Human Rights / Private Sector</h3></div></div>
+  <p>Роль компаний, ресурсов, supply chains, труда и инвестиций в конфликте и мире.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-26-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-26-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-26-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="protection of civilians / r2p">
+  <div class="field-top"><div><span class="field-cat">Protection / security</span><h3>Protection of Civilians / R2P</h3></div></div>
+  <p>Защита гражданских; R2P — политическое обязательство предотвращать genocide, war crimes, ethnic cleansing, crimes against humanity.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-27-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-27-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-27-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="humanitarian assistance">
+  <div class="field-top"><div><span class="field-cat">Соседнее поле</span><h3>Humanitarian Assistance</h3></div></div>
+  <p>Life-saving assistance и alleviation of suffering; пересекается с peacebuilding, но имеет собственные принципы и цели.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-28-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-28-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-28-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="sustainable development / sdgs">
+  <div class="field-top"><div><span class="field-cat">Смежная рамка</span><h3>Sustainable Development / SDGs</h3></div></div>
+  <p>Связи peace–development, особенно SDG 16, но peacebuilding не сводится к development.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-29-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-29-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-29-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="international financial institutions">
+  <div class="field-top"><div><span class="field-cat">Институциональная область</span><h3>International Financial Institutions</h3></div></div>
+  <p>World Bank, IMF, regional development banks и влияние их политик/финансирования на fragility, inequality, recovery.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-30-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-30-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-30-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="justice and accountability">
+  <div class="field-top"><div><span class="field-cat">Justice</span><h3>Justice and Accountability</h3></div></div>
+  <p>Признание вреда и ответственность за нарушения: courts, documentation, reparations, truth-seeking и др.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-31-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-31-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-31-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="mass atrocities prevention">
+  <div class="field-top"><div><span class="field-cat">Prevention</span><h3>Mass Atrocities Prevention</h3></div></div>
+  <p>Предотвращение genocide, crimes against humanity, war crimes и ethnic cleansing.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-32-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-32-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-32-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="early warning and early response">
+  <div class="field-top"><div><span class="field-cat">Prevention</span><h3>Early Warning and Early Response</h3></div></div>
+  <p>Системы, которые отслеживают risk indicators и связывают предупреждение с реальным preventive action.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-33-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-33-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-33-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="ddr">
+  <div class="field-top"><div><span class="field-cat">Operational / post-conflict</span><h3>DDR</h3></div></div>
+  <p>Disarmament, Demobilisation and Reintegration бывших combatants и связанных с вооружёнными группами людей.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-34-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-34-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-34-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="decolonisation / shift the power">
+  <div class="field-top"><div><span class="field-cat">Критическая рамка</span><h3>Decolonisation / Shift the Power</h3></div></div>
+  <p>Перераспределение authority, resources и knowledge away from international dominance; шире, чем “нанять local partner”.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-35-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-35-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-35-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="localisation">
+  <div class="field-top"><div><span class="field-cat">Институциональный подход</span><h3>Localisation</h3></div></div>
+  <p>Передача ресурсов и decision-making local actors; может происходить без глубокой decolonisation.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-36-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-36-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-36-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div>
+<div class="field-card" data-field-name="restorative / transitional justice">
+  <div class="field-top"><div><span class="field-cat">Justice / post-conflict</span><h3>Restorative / Transitional Justice</h3></div></div>
+  <p>Restorative — harm, needs, responsibility, repair; transitional — комплекс механизмов для обществ после массовых/системных нарушений.</p>
+  <div class="ratings">
+    <label>Интерес <select id="field-37-interest" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label>Fit сейчас <select id="field-37-fit" data-save="select"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+  </div>
+  <textarea id="field-37-note" data-save="text" class="field-note" placeholder="1–2 заметки: что привлекает / что отталкивает"></textarea>
+</div></div>
+
+<section id="glossary" class="section-title"><span class="eyebrow">QUICK REFERENCE</span><h2>Рабочий глоссарий</h2><p>Не учи его как словарь. Пользуйся, когда встречаешь термин в тексте или разговоре, и постепенно добавляй свои примеры в заметках.</p></section>
+<div class="gloss-controls"><input id="gloss-search" type="search" placeholder="Поиск по терминам и определениям…"></div>
+<div class="glossary-grid" id="glossary-grid"><div class="term" data-term="peacebuilding долгосрочная работа по снижению риска насилия/возврата конфликта и созданию условий для устойчивого мира."><h3>Peacebuilding</h3><p>Долгосрочная работа по снижению риска насилия/возврата конфликта и созданию условий для устойчивого мира.</p></div><div class="term" data-term="peacemaking дипломатические/политические усилия по достижению negotiated agreement в продолжающемся конфликте."><h3>Peacemaking</h3><p>Дипломатические/политические усилия по достижению negotiated agreement в продолжающемся конфликте.</p></div><div class="term" data-term="peacekeeping операции, обычно поддерживающие ceasefire/peace agreement и политический процесс; часто включают protection и раннее peacebuilding."><h3>Peacekeeping</h3><p>Операции, обычно поддерживающие ceasefire/peace agreement и политический процесс; часто включают protection и раннее peacebuilding.</p></div><div class="term" data-term="conflict prevention действия, которые пытаются не допустить эскалации спора/напряжения в violent conflict."><h3>Conflict prevention</h3><p>Действия, которые пытаются не допустить эскалации спора/напряжения в violent conflict.</p></div><div class="term" data-term="conflict management ограничение разрушительных проявлений конфликта без обязательной трансформации его причин."><h3>Conflict management</h3><p>Ограничение разрушительных проявлений конфликта без обязательной трансформации его причин.</p></div><div class="term" data-term="conflict resolution работа над решением проблем/интересов, лежащих в основе конфликта."><h3>Conflict resolution</h3><p>Работа над решением проблем/интересов, лежащих в основе конфликта.</p></div><div class="term" data-term="conflict transformation изменение отношений, структур, дискурсов и условий, которые производят/поддерживают разрушительный конфликт."><h3>Conflict transformation</h3><p>Изменение отношений, структур, дискурсов и условий, которые производят/поддерживают разрушительный конфликт.</p></div><div class="term" data-term="conflict driver условие или процесс, который поддерживает/усиливает конфликтную динамику."><h3>Conflict driver</h3><p>Условие или процесс, который поддерживает/усиливает конфликтную динамику.</p></div><div class="term" data-term="trigger событие, которое может быстро изменить интенсивность или направление конфликта."><h3>Trigger</h3><p>Событие, которое может быстро изменить интенсивность или направление конфликта.</p></div><div class="term" data-term="divider / connector факторы, которые разделяют людей/группы или, наоборот, создают связи и общие интересы."><h3>Divider / Connector</h3><p>Факторы, которые разделяют людей/группы или, наоборот, создают связи и общие интересы.</p></div><div class="term" data-term="conflict sensitivity способность понимать взаимодействие intervention и conflict context и действовать так, чтобы снижать непреднамеренный вред."><h3>Conflict sensitivity</h3><p>Способность понимать взаимодействие intervention и conflict context и действовать так, чтобы снижать непреднамеренный вред.</p></div><div class="term" data-term="do no harm практическая логика анализа того, как aid/intervention может усиливать dividers или ослаблять connectors."><h3>Do No Harm</h3><p>Практическая логика анализа того, как aid/intervention может усиливать dividers или ослаблять connectors.</p></div><div class="term" data-term="mediation процесс, где third party помогает сторонам вести переговоры; решения остаются у сторон."><h3>Mediation</h3><p>Процесс, где third party помогает сторонам вести переговоры; решения остаются у сторон.</p></div><div class="term" data-term="dialogue структурированный процесс для понимания, отношений, exploration или совместной работы; не обязательно ведёт к соглашению."><h3>Dialogue</h3><p>Структурированный процесс для понимания, отношений, exploration или совместной работы; не обязательно ведёт к соглашению.</p></div><div class="term" data-term="facilitation проектирование и ведение группового процесса; может использоваться в dialogue, mediation, planning и др."><h3>Facilitation</h3><p>Проектирование и ведение группового процесса; может использоваться в dialogue, mediation, planning и др.</p></div><div class="term" data-term="peace process широкий политический процесс прекращения/трансформации violent conflict: negotiations, agreements, implementation, participation и сопутствующие механизмы."><h3>Peace process</h3><p>Широкий политический процесс прекращения/трансформации violent conflict: negotiations, agreements, implementation, participation и сопутствующие механизмы.</p></div><div class="term" data-term="inclusivity не просто присутствие разных групп, а доступ к процессу и возможность влиять."><h3>Inclusivity</h3><p>Не просто присутствие разных групп, а доступ к процессу и возможность влиять.</p></div><div class="term" data-term="national / local ownership идея, что решения и процесс не должны быть навязаны внешними акторами; требует проверки, кто именно внутри “local/national” имеет власть."><h3>National / local ownership</h3><p>Идея, что решения и процесс не должны быть навязаны внешними акторами; требует проверки, кто именно внутри “local/national” имеет власть.</p></div><div class="term" data-term="legitimacy признание actor/process как имеющего право/основание действовать или представлять интересы."><h3>Legitimacy</h3><p>Признание actor/process как имеющего право/основание действовать или представлять интересы.</p></div><div class="term" data-term="wps women, peace and security agenda вокруг participation, prevention, protection, relief &amp; recovery."><h3>WPS</h3><p>Women, Peace and Security agenda вокруг participation, prevention, protection, relief &amp; recovery.</p></div><div class="term" data-term="yps youth, peace and security agenda вокруг meaningful youth participation в prevention/peacebuilding."><h3>YPS</h3><p>Youth, Peace and Security agenda вокруг meaningful youth participation в prevention/peacebuilding.</p></div><div class="term" data-term="human security people-centred security: survival, livelihood, dignity и комплексные угрозы, а не только territorial/state security."><h3>Human security</h3><p>People-centred security: survival, livelihood, dignity и комплексные угрозы, а не только territorial/state security.</p></div><div class="term" data-term="social cohesion качество horizontal/vertical relations, trust, cooperation и belonging; требует конкретных indicators."><h3>Social cohesion</h3><p>Качество horizontal/vertical relations, trust, cooperation и belonging; требует конкретных indicators.</p></div><div class="term" data-term="transitional justice комплекс justice measures для обществ, работающих с системными/массовыми нарушениями: criminal justice, truth, reparations, institutional reform и др."><h3>Transitional justice</h3><p>Комплекс justice measures для обществ, работающих с системными/массовыми нарушениями: criminal justice, truth, reparations, institutional reform и др.</p></div><div class="term" data-term="restorative justice подход, фокусирующийся на harm, needs, responsibility и repair через соответствующие процессы."><h3>Restorative justice</h3><p>Подход, фокусирующийся на harm, needs, responsibility и repair через соответствующие процессы.</p></div><div class="term" data-term="reconciliation долгосрочная трансформация отношений после насилия; не синоним forgiveness."><h3>Reconciliation</h3><p>Долгосрочная трансформация отношений после насилия; не синоним forgiveness.</p></div><div class="term" data-term="memorialisation практики общественной памяти о насилии/репрессиях и их жертвах."><h3>Memorialisation</h3><p>Практики общественной памяти о насилии/репрессиях и их жертвах.</p></div><div class="term" data-term="ddr disarmament, demobilisation and reintegration."><h3>DDR</h3><p>Disarmament, Demobilisation and Reintegration.</p></div><div class="term" data-term="ssr security sector reform: изменение security institutions так, чтобы они были эффективными, accountable и rights-respecting."><h3>SSR</h3><p>Security Sector Reform: изменение security institutions так, чтобы они были эффективными, accountable и rights-respecting.</p></div><div class="term" data-term="r2p responsibility to protect — политическое обязательство защищать populations от четырёх atrocity crimes."><h3>R2P</h3><p>Responsibility to Protect — политическое обязательство защищать populations от четырёх atrocity crimes.</p></div><div class="term" data-term="early warning сбор/анализ risk indicators для предупреждения эскалации или массового насилия."><h3>Early warning</h3><p>Сбор/анализ risk indicators для предупреждения эскалации или массового насилия.</p></div><div class="term" data-term="atrocity prevention специализированная prevention of genocide, war crimes, crimes against humanity, ethnic cleansing."><h3>Atrocity prevention</h3><p>Специализированная prevention of genocide, war crimes, crimes against humanity, ethnic cleansing.</p></div><div class="term" data-term="mhpss mental health and psychosocial support."><h3>MHPSS</h3><p>Mental Health and Psychosocial Support.</p></div><div class="term" data-term="localisation передача resources/decision-making local actors."><h3>Localisation</h3><p>Передача resources/decision-making local actors.</p></div><div class="term" data-term="hdp nexus связка humanitarian–development–peace: попытка улучшить coherence без стирания различий между тремя логиками."><h3>HDP nexus</h3><p>Связка humanitarian–development–peace: попытка улучшить coherence без стирания различий между тремя логиками.</p></div><div class="term" data-term="theory of change явное объяснение, как и почему intervention должна привести к желаемому изменению, с assumptions."><h3>Theory of Change</h3><p>Явное объяснение, как и почему intervention должна привести к желаемому изменению, с assumptions.</p></div><div class="term" data-term="output непосредственный продукт activity: например, проведённые сессии, обученные участники."><h3>Output</h3><p>Непосредственный продукт activity: например, проведённые сессии, обученные участники.</p></div><div class="term" data-term="outcome изменение в поведении, отношениях, институтах, capacities или dynamics, к которому intervention стремится."><h3>Outcome</h3><p>Изменение в поведении, отношениях, институтах, capacities или dynamics, к которому intervention стремится.</p></div><div class="term" data-term="pmel planning, monitoring, evaluation and learning."><h3>PMEL</h3><p>Planning, Monitoring, Evaluation and Learning.</p></div><div class="term" data-term="adaptive management изменение программы по мере появления новой информации о контексте и результатах."><h3>Adaptive management</h3><p>Изменение программы по мере появления новой информации о контексте и результатах.</p></div></div>
+
+<section id="books" class="section-title"><span class="eyebrow">OPTIONAL DEEP READING</span><h2>Книги на выходные и дальше</h2><p>Не надо читать все четыре за месяц. Выбери одну основную и одну “листать рядом”. Интенсив не должен превращаться в соревнование по страницам.</p></section>
+<div class="books"><a class="book" href="https://academic.oup.com/book/2460" target="_blank" rel="noopener"><strong>John Paul Lederach — The Moral Imagination</strong><span>Для relational imagination и понимания conflict transformation как практики.</span></a><a class="book" href="https://www.ucpress.edu/books/bananas-beaches-and-bases" target="_blank" rel="noopener"><strong>Cynthia Enloe — Bananas, Beaches and Bases</strong><span>Чтобы видеть международную политику через gendered everyday life, labour и militarism.</span></a><a class="book" href="https://www.wiley.com/en-us/Gender+and+Peacebuilding-p-9780745682525" target="_blank" rel="noopener"><strong>Claire Duncanson — Gender and Peacebuilding</strong><span>Более системная книга именно про gender + peacebuilding.</span></a><a class="book" href="https://kroc.nd.edu/research/books/wicked-problems-the-ethics-of-action-for-peace-rights-and-justice-2022/" target="_blank" rel="noopener"><strong>Wicked Problems: The Ethics of Action for Peace, Rights, and Justice</strong><span>Про trade-offs и этические дилеммы практиков; полезно против “идеально правильных” intervention frameworks.</span></a></div>
+
+<section class="panel" style="margin-top:55px">
+  <h2>Что должно измениться к Day 30</h2>
+  <p>Ты должна уметь без шпаргалки объяснить устройство поля, сделать базовый conflict analysis, различить mediation/dialogue/facilitation, объяснить функции civil society, ориентироваться в WPS и feminist critiques, развести justice/reconciliation/restorative/transitional approaches, понимать соседние operational fields и аргументированно назвать 2–3 профессиональные специализации, в которые ты хочешь идти.</p>
+  <div class="callout"><strong>Критерий успеха — не “я всё знаю”.</strong>Критерий: когда в разговоре звучат conflict sensitivity, local ownership, WPS, mediation support, transitional justice, DDR или social cohesion, ты понимаешь, в какой «комнате» поля находишься, какие там основные вопросы и что тебе нужно спросить дальше.</div>
+</section>
+
+<footer class="footer">Сделано как статическая self-contained страница: можно загрузить этот HTML в GitHub repository и включить GitHub Pages. Прогресс и заметки сохраняются через <code>localStorage</code> в конкретном браузере. «Экспорт» делает резервную копию JSON, а «Импорт» позволяет перенести её в другой браузер или на другое устройство.</footer>
+</main>
+<script>
+const KEY='peacebuilding30-v1';
+let state={};
+try{state=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){state={}}
+function save(){localStorage.setItem(KEY,JSON.stringify(state)); updateProgress();}
+function bindSaved(){
+ document.querySelectorAll('[data-save="check"]').forEach(el=>{const id=el.id; el.checked=!!state[id]; el.addEventListener('change',()=>{state[id]=el.checked;save();});});
+ document.querySelectorAll('[data-save="text"]').forEach(el=>{const id=el.id; if(state[id]) el.value=state[id]; el.addEventListener('input',()=>{state[id]=el.value;save();});});
+ document.querySelectorAll('[data-save="select"]').forEach(el=>{const id=el.id; if(state[id]) el.value=state[id]; el.addEventListener('change',()=>{state[id]=el.value;save();});});
+}
+function updateProgress(){
+ let done=0; const week={1:0,2:0,3:0,4:0};
+ document.querySelectorAll('.day-done').forEach(el=>{const card=el.closest('.day-card'); if(el.checked){done++; week[el.dataset.week]++; card.classList.add('done'); document.getElementById('status-'+el.dataset.day).textContent='готово';} else {card.classList.remove('done'); const any=[...card.querySelectorAll('.task input')].some(x=>x.checked); document.getElementById('status-'+el.dataset.day).textContent=any?'в процессе':'не начато';} });
+ const pct=Math.round(done/30*100); document.getElementById('main-progress').style.width=pct+'%'; document.getElementById('main-pct').textContent=pct+'%'; document.getElementById('days-done').textContent=done;
+ const totals={1:7,2:7,3:7,4:9}; for(let i=1;i<=4;i++){document.getElementById('week'+i+'-pct').textContent=Math.round(week[i]/totals[i]*100)+'%';}
+}
+document.getElementById('open-all').onclick=()=>document.querySelectorAll('.day-card').forEach(x=>x.open=true);
+document.getElementById('close-all').onclick=()=>document.querySelectorAll('.day-card').forEach(x=>x.open=false);
+document.getElementById('field-search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('.field-card').forEach(x=>x.style.display=x.dataset.fieldName.includes(q)?'block':'none');});
+document.getElementById('gloss-search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('.term').forEach(x=>x.style.display=x.dataset.term.includes(q)?'block':'none');});
+document.getElementById('clear-ratings').onclick=()=>{if(!confirm('Очистить оценки и заметки в карте направлений?'))return; document.querySelectorAll('[id^="field-"]').forEach(el=>{delete state[el.id]; if(el.tagName==='SELECT')el.value=''; if(el.tagName==='TEXTAREA')el.value='';});save();};
+document.getElementById('export-btn').onclick=()=>{
+ const payload={exportedAt:new Date().toISOString(),progress:{daysDone:[...document.querySelectorAll('.day-done')].filter(x=>x.checked).map(x=>Number(x.dataset.day))},state};
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='peacebuilding-30day-progress.json'; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+};
+document.getElementById('import-btn').onclick=()=>document.getElementById('import-file').click();
+document.getElementById('import-file').addEventListener('change',e=>{
+ const file=e.target.files&&e.target.files[0]; if(!file)return;
+ const reader=new FileReader();
+ reader.onload=()=>{
+   try{
+     const parsed=JSON.parse(reader.result);
+     const incoming=(parsed&&parsed.state&&typeof parsed.state==='object')?parsed.state:parsed;
+     if(!incoming||typeof incoming!=='object'||Array.isArray(incoming))throw new Error('bad format');
+     if(!confirm('Заменить текущий прогресс и заметки данными из этого файла?'))return;
+     state=incoming; localStorage.setItem(KEY,JSON.stringify(state)); location.reload();
+   }catch(err){alert('Не удалось импортировать файл. Выбери JSON, созданный кнопкой «Экспорт».');}
+ };
+ reader.readAsText(file); e.target.value='';
+});
+bindSaved();updateProgress();
+</script>
+</body></html>
